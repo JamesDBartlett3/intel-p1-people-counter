@@ -41,6 +41,6 @@ RUN python3.5 -m pip install tqdm requests pyyaml numpy paho-mqtt -t /usr/local/
 RUN cd ${WORKSPACE}/webservice/server; npm install
 RUN cd ${WORKSPACE}/webservice/ui; npm install
 
-COPY init-services.sh ${HOMEDIR}
+COPY launch-servers.sh ${HOMEDIR}
 
-CMD ["/bin/bash", "/home/openvino/init-services.sh"]
+CMD ["/bin/bash", "/home/openvino/launch-servers.sh"]

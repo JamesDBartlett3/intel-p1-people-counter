@@ -1,0 +1,7 @@
+face-detection-retail-0005
+face-detection-retail-0004
+pedestrian-detection-adas-0002
+pedestrian-detection-adas-binary-0001
+person-detection-retail-0013
+person-detection-retail-0002
+person-detection-asl-0001

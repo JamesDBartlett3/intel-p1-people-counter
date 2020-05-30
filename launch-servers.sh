@@ -21,18 +21,12 @@ npm run dev > $LOGDIR/gui.log 2>&1 &
 echo "GUI service started."
 
 cd $HWS
-sudo ffserver -f ./ffmpeg/server.conf > $LOGDIR/ffserver.log 2>&1 &
+ffserver -f ./ffmpeg/server.conf > $LOGDIR/ffserver.log 2>&1 &
 echo "FFmpeg Server started."
 
 
 # Start an infinite loop and wait for the user to press Q to stop the container
-printf "Press Q to stop the container...\n"
+printf "The app is now running. You may access the interface at http://127.0.0.1:3004\n"
 while [ true ] ; do
-read -n 1 k <&1
-if [ $k = q ] ; then
-printf "\n"
-break ;
-else
-printf "\nPress Q to stop the container...\n"
-fi
+sleep 1;
 done

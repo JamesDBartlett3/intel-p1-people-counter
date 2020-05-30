@@ -36,6 +36,7 @@ ENV INSTALLDIR /opt/intel/openvino
 ENV HOMEDIR /home/openvino
 ENV WORKSPACE /home/openvino/workspace
 
+RUN echo ""
 RUN git clone https://github.com/JamesDBartlett/nd131-openvino-fundamentals-project-starter.git ${WORKSPACE}
 RUN cd /tmp; curl https://www.python.org/ftp/python/3.5.9/Python-3.5.9.tgz | tar -xz; cd Python-3.5.9; ./configure --enable-optimizations; make altinstall
 RUN python3.5 -m pip install tqdm requests pyyaml numpy paho-mqtt -t /usr/local/lib/python3.5/dist-packages

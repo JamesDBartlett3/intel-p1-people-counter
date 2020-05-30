@@ -2,6 +2,7 @@ FROM openvino/ubuntu18_runtime:2019_R3.1
 USER root
 WORKDIR /home/openvino
 RUN chown openvino -R /home/openvino
+RUN usermod -a -G users openvino
 ARG DEPENDENCIES="autoconf \
                   automake \
                   build-essential \

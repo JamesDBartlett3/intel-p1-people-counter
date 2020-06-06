@@ -1,0 +1,6 @@
+faster_rcnn_inception_resnet_v2_atrous_coco
+faster_rcnn_inception_v2_coco
+mobilenet-v2-1.0-224
+ssdlite_mobilenet_v2
+ssd_mobilenet_v1_fpn_coco
+ssd_mobilenet_v2_coco

@@ -35,7 +35,7 @@ deployed edge model. The potential effects of each of these are as follows...
 ## Model Research
 
 [This heading is only required if a suitable model was not found after trying out at least three
-different models. However, you may also use this heading to detail how you converted
+different models. However, you may also use this heading to detail how you converted 
 a successful model.]
 
 In investigating potential people counter models, I tried each of the following three models:

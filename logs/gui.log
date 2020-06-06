@@ -1,0 +1,63 @@
+
+> intel-people-counter-app@0.1.0 dev /home/workspace/webservice/ui
+> cross-env NODE_ENV=development webpack-dev-server --history-api-fallback --watch --hot --inline
+
+Project is running at [1m[34mhttp://0.0.0.0:3000/[39m[22m
+webpack output is served from [1m[34m/[39m[22m
+404s will fallback to [1m[34m/index.html[39m[22m
+(node:1328) DeprecationWarning: loaderUtils.parseQuery() received a non-string value which can be problematic, see https://github.com/webpack/loader-utils/issues/56
+parseQuery() will be replaced with getOptions() in the next major version of loader-utils.
+Hash: [1m59f75d0aeb64ce96472d[39m[22m
+Version: webpack [1m2.7.0[39m[22m
+Time: [1m9558[39m[22mms
+                                   [1mAsset[39m[22m       [1mSize[39m[22m  [1mChunks[39m[22m  [1m[39m[22m           [1m[39m[22m       [1mChunk Names[39m[22m
+                               [1m[33mbundle.js[39m[22m    [1m[33m15.8 MB[39m[22m       [1m0[39m[22m  [1m[32m[emitted][39m[22m  [1m[33m[big][39m[22m  main
+                              [1m[32mindex.html[39m[22m  414 bytes        [1m[39m[22m  [1m[32m[emitted][39m[22m         
+    [1m[32massets/fonts/fontawesome-webfont.eot[39m[22m     166 kB        [1m[39m[22m  [1m[32m[emitted][39m[22m         
+    [1m[33massets/fonts/fontawesome-webfont.svg[39m[22m     [1m[33m444 kB[39m[22m        [1m[39m[22m  [1m[32m[emitted][39m[22m  [1m[33m[big][39m[22m  
+    [1m[32massets/fonts/fontawesome-webfont.ttf[39m[22m     166 kB        [1m[39m[22m  [1m[32m[emitted][39m[22m         
+   [1m[32massets/fonts/fontawesome-webfont.woff[39m[22m      98 kB        [1m[39m[22m  [1m[32m[emitted][39m[22m         
+  [1m[32massets/fonts/fontawesome-webfont.woff2[39m[22m    77.2 kB        [1m[39m[22m  [1m[32m[emitted][39m[22m         
+        [1m[32massets/fonts/IntelClear-Bold.eot[39m[22m    74.2 kB        [1m[39m[22m  [1m[32m[emitted][39m[22m         
+        [1m[32massets/fonts/IntelClear-Bold.ttf[39m[22m      74 kB        [1m[39m[22m  [1m[32m[emitted][39m[22m         
+       [1m[32massets/fonts/IntelClear-Bold.woff[39m[22m    39.2 kB        [1m[39m[22m  [1m[32m[emitted][39m[22m         
+  [1m[32massets/fonts/IntelClear-BoldItalic.eot[39m[22m      80 kB        [1m[39m[22m  [1m[32m[emitted][39m[22m         
+  [1m[32massets/fonts/IntelClear-BoldItalic.ttf[39m[22m    79.8 kB        [1m[39m[22m  [1m[32m[emitted][39m[22m         
+ [1m[32massets/fonts/IntelClear-BoldItalic.woff[39m[22m    41.8 kB        [1m[39m[22m  [1m[32m[emitted][39m[22m         
+      [1m[32massets/fonts/IntelClear-Italic.eot[39m[22m    77.7 kB        [1m[39m[22m  [1m[32m[emitted][39m[22m         
+      [1m[32massets/fonts/IntelClear-Italic.ttf[39m[22m    77.5 kB        [1m[39m[22m  [1m[32m[emitted][39m[22m         
+     [1m[32massets/fonts/IntelClear-Italic.woff[39m[22m    40.9 kB        [1m[39m[22m  [1m[32m[emitted][39m[22m         
+       [1m[32massets/fonts/IntelClear-Light.eot[39m[22m    71.6 kB        [1m[39m[22m  [1m[32m[emitted][39m[22m         
+       [1m[32massets/fonts/IntelClear-Light.ttf[39m[22m    71.4 kB        [1m[39m[22m  [1m[32m[emitted][39m[22m         
+      [1m[32massets/fonts/IntelClear-Light.woff[39m[22m    38.5 kB        [1m[39m[22m  [1m[32m[emitted][39m[22m         
+ [1m[32massets/fonts/IntelClear-LightItalic.eot[39m[22m    77.7 kB        [1m[39m[22m  [1m[32m[emitted][39m[22m         
+ [1m[32massets/fonts/IntelClear-LightItalic.ttf[39m[22m    77.4 kB        [1m[39m[22m  [1m[32m[emitted][39m[22m         
+[1m[32massets/fonts/IntelClear-LightItalic.woff[39m[22m      41 kB        [1m[39m[22m  [1m[32m[emitted][39m[22m         
+     [1m[32massets/fonts/IntelClear-Regular.eot[39m[22m    73.6 kB        [1m[39m[22m  [1m[32m[emitted][39m[22m         
+     [1m[32massets/fonts/IntelClear-Regular.ttf[39m[22m    73.4 kB        [1m[39m[22m  [1m[32m[emitted][39m[22m         
+    [1m[32massets/fonts/IntelClear-Regular.woff[39m[22m    39.7 kB        [1m[39m[22m  [1m[32m[emitted][39m[22m         
+         [1m[32massets/images/background-02.jpg[39m[22m     246 kB        [1m[39m[22m  [1m[32m[emitted][39m[22m         
+                 [1m[32massets/images/Group.svg[39m[22m    6.42 kB        [1m[39m[22m  [1m[32m[emitted][39m[22m         
+  [1m[32massets/images/intel-people-counter.svg[39m[22m    7.72 kB        [1m[39m[22m  [1m[32m[emitted][39m[22m         
+            [1m[32massets/fonts/FontAwesome.otf[39m[22m     135 kB        [1m[39m[22m  [1m[32m[emitted][39m[22m         
+chunk    {[1m[33m0[39m[22m} [1m[32mbundle.js[39m[22m (main) 6.24 MB[1m[33m [entry][39m[22m[1m[32m [rendered][39m[22m
+    [5] [1m./~/react/react.js[39m[22m 56 bytes {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
+   [80] [1m./~/redux/es/index.js[39m[22m 1.08 kB {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
+  [114] [1m./~/react-redux/es/index.js[39m[22m 229 bytes {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
+  [124] [1m./~/url/url.js[39m[22m 23.3 kB {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
+  [329] [1m./~/react-router-redux/es/index.js[39m[22m 420 bytes {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
+  [360] [1m(webpack)/hot/emitter.js[39m[22m 77 bytes {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
+  [362] [1m./src/index.jsx[39m[22m 2.74 kB {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
+  [363] [1m(webpack)-dev-server/client?http://0.0.0.0:3000[39m[22m 7.93 kB {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
+  [364] [1m(webpack)/hot/dev-server.js[39m[22m 1.57 kB {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
+  [371] [1m./src/components/navigation/ConnectedNavigation.jsx[39m[22m 850 bytes {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
+  [373] [1m./src/dux/reducers.js[39m[22m 509 bytes {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
+  [375] [1m./src/features/stats/ConnectedStats.jsx[39m[22m 884 bytes {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
+  [377] [1m./src/pages/monitor/Monitor.jsx[39m[22m 2.6 kB {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
+  [447] [1m./~/history/createBrowserHistory.js[39m[22m 146 bytes {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
+  [749] [1mmulti (webpack)-dev-server/client?http://0.0.0.0:3000 webpack/hot/dev-server ./src/index.jsx[39m[22m 52 bytes {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
+     + 735 hidden modules
+Child [1mhtml-webpack-plugin for "index.html"[39m[22m:
+    chunk    {[1m[33m0[39m[22m} [1m[32mindex.html[39m[22m 402 bytes[1m[33m [entry][39m[22m[1m[32m [rendered][39m[22m
+        [0] [1m./~/html-webpack-plugin/lib/loader.js!./src/index.html[39m[22m 402 bytes {[1m[33m0[39m[22m}[1m[32m [built][39m[22m
+webpack: Compiled successfully.

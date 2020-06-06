@@ -1,0 +1,163 @@
+Mosca server started.
+Client mqttjs_48d5eed5 connected
+Published to $SYS/ICcViaM/new/clients <- mqttjs_48d5eed5
+Client mqttjs_48d5eed5 subscribed to person.
+Client mqttjs_48d5eed5 subscribed to person/duration.
+Published to presence <- "hello from react"
+Published to $SYS/ICcViaM/new/subscribes <- {"clientId":"mqttjs_48d5eed5","topic":"person"}
+Published to $SYS/ICcViaM/new/subscribes <- {"clientId":"mqttjs_48d5eed5","topic":"person/duration"}
+Client mqttjs_48d5eed5 unsubscribed from person.
+Client mqttjs_48d5eed5 unsubscribed from person/duration.
+Client mqttjs_48d5eed5
+Published to $SYS/ICcViaM/new/unsubscribes <- {"clientId":"mqttjs_48d5eed5","topic":"person"}
+Published to $SYS/ICcViaM/new/unsubscribes <- {"clientId":"mqttjs_48d5eed5","topic":"person/duration"}
+Published to $SYS/ICcViaM/disconnect/clients <- mqttjs_48d5eed5
+Client mqttjs_48d5eed5 connected
+Published to $SYS/ICcViaM/new/clients <- mqttjs_48d5eed5
+Client mqttjs_48d5eed5 subscribed to person.
+Client mqttjs_48d5eed5 subscribed to person/duration.
+Published to presence <- "hello from react"
+Published to $SYS/ICcViaM/new/subscribes <- {"clientId":"mqttjs_48d5eed5","topic":"person"}
+Published to $SYS/ICcViaM/new/subscribes <- {"clientId":"mqttjs_48d5eed5","topic":"person/duration"}
+Client mqttjs_48d5eed5 unsubscribed from person.
+Client mqttjs_48d5eed5 unsubscribed from person/duration.
+Client mqttjs_48d5eed5
+Published to $SYS/ICcViaM/new/unsubscribes <- {"clientId":"mqttjs_48d5eed5","topic":"person"}
+Published to $SYS/ICcViaM/new/unsubscribes <- {"clientId":"mqttjs_48d5eed5","topic":"person/duration"}
+Published to $SYS/ICcViaM/disconnect/clients <- mqttjs_48d5eed5
+Client mqttjs_48d5eed5 connected
+Published to $SYS/ICcViaM/new/clients <- mqttjs_48d5eed5
+Client mqttjs_48d5eed5 subscribed to person.
+Client mqttjs_48d5eed5 subscribed to person/duration.
+Published to presence <- "hello from react"
+Published to $SYS/ICcViaM/new/subscribes <- {"clientId":"mqttjs_48d5eed5","topic":"person"}
+Published to $SYS/ICcViaM/new/subscribes <- {"clientId":"mqttjs_48d5eed5","topic":"person/duration"}
+Client ddaf3a7b-5232-41c4-9606-6db66f3e817e connected
+Published to $SYS/ICcViaM/new/clients <- ddaf3a7b-5232-41c4-9606-6db66f3e817e
+Client ddaf3a7b-5232-41c4-9606-6db66f3e817e
+Published to $SYS/ICcViaM/disconnect/clients <- ddaf3a7b-5232-41c4-9606-6db66f3e817e
+Client mqttjs_48d5eed5 unsubscribed from person.
+Client mqttjs_48d5eed5 unsubscribed from person/duration.
+Client mqttjs_48d5eed5
+Published to $SYS/ICcViaM/new/unsubscribes <- {"clientId":"mqttjs_48d5eed5","topic":"person"}
+Published to $SYS/ICcViaM/new/unsubscribes <- {"clientId":"mqttjs_48d5eed5","topic":"person/duration"}
+Published to $SYS/ICcViaM/disconnect/clients <- mqttjs_48d5eed5
+Client mqttjs_48d5eed5 connected
+Published to $SYS/ICcViaM/new/clients <- mqttjs_48d5eed5
+Client mqttjs_48d5eed5 subscribed to person.
+Client mqttjs_48d5eed5 subscribed to person/duration.
+Published to presence <- "hello from react"
+Published to $SYS/ICcViaM/new/subscribes <- {"clientId":"mqttjs_48d5eed5","topic":"person"}
+Published to $SYS/ICcViaM/new/subscribes <- {"clientId":"mqttjs_48d5eed5","topic":"person/duration"}
+Client mqttjs_48d5eed5 unsubscribed from person.
+Client mqttjs_48d5eed5 unsubscribed from person/duration.
+Client mqttjs_48d5eed5
+Published to $SYS/ICcViaM/new/unsubscribes <- {"clientId":"mqttjs_48d5eed5","topic":"person"}
+Published to $SYS/ICcViaM/new/unsubscribes <- {"clientId":"mqttjs_48d5eed5","topic":"person/duration"}
+Published to $SYS/ICcViaM/disconnect/clients <- mqttjs_48d5eed5
+Client mqttjs_48d5eed5 connected
+Published to $SYS/ICcViaM/new/clients <- mqttjs_48d5eed5
+Client mqttjs_48d5eed5 subscribed to person.
+Client mqttjs_48d5eed5 subscribed to person/duration.
+Published to presence <- "hello from react"
+Published to $SYS/ICcViaM/new/subscribes <- {"clientId":"mqttjs_48d5eed5","topic":"person"}
+Published to $SYS/ICcViaM/new/subscribes <- {"clientId":"mqttjs_48d5eed5","topic":"person/duration"}
+Client 44c4acd6-4d38-45f8-906b-71545e5c4a87 connected
+Published to $SYS/ICcViaM/new/clients <- 44c4acd6-4d38-45f8-906b-71545e5c4a87
+Client 44c4acd6-4d38-45f8-906b-71545e5c4a87
+Published to $SYS/ICcViaM/disconnect/clients <- 44c4acd6-4d38-45f8-906b-71545e5c4a87
+Client mqttjs_48d5eed5 unsubscribed from person.
+Client mqttjs_48d5eed5 unsubscribed from person/duration.
+Client mqttjs_48d5eed5
+Published to $SYS/ICcViaM/new/unsubscribes <- {"clientId":"mqttjs_48d5eed5","topic":"person"}
+Published to $SYS/ICcViaM/new/unsubscribes <- {"clientId":"mqttjs_48d5eed5","topic":"person/duration"}
+Published to $SYS/ICcViaM/disconnect/clients <- mqttjs_48d5eed5
+Client mqttjs_48d5eed5 connected
+Published to $SYS/ICcViaM/new/clients <- mqttjs_48d5eed5
+Client mqttjs_48d5eed5 subscribed to person.
+Client mqttjs_48d5eed5 subscribed to person/duration.
+Published to presence <- "hello from react"
+Published to $SYS/ICcViaM/new/subscribes <- {"clientId":"mqttjs_48d5eed5","topic":"person"}
+Published to $SYS/ICcViaM/new/subscribes <- {"clientId":"mqttjs_48d5eed5","topic":"person/duration"}
+Client cf029384-fb3d-4eab-8df6-82d45488876d connected
+Published to $SYS/ICcViaM/new/clients <- cf029384-fb3d-4eab-8df6-82d45488876d
+Client cf029384-fb3d-4eab-8df6-82d45488876d
+Published to $SYS/ICcViaM/disconnect/clients <- cf029384-fb3d-4eab-8df6-82d45488876d
+Client mqttjs_48d5eed5 unsubscribed from person.
+Client mqttjs_48d5eed5 unsubscribed from person/duration.
+Client mqttjs_48d5eed5
+Published to $SYS/ICcViaM/new/unsubscribes <- {"clientId":"mqttjs_48d5eed5","topic":"person"}
+Published to $SYS/ICcViaM/new/unsubscribes <- {"clientId":"mqttjs_48d5eed5","topic":"person/duration"}
+Published to $SYS/ICcViaM/disconnect/clients <- mqttjs_48d5eed5
+Client mqttjs_48d5eed5 connected
+Published to $SYS/ICcViaM/new/clients <- mqttjs_48d5eed5
+Client mqttjs_48d5eed5 subscribed to person.
+Client mqttjs_48d5eed5 subscribed to person/duration.
+Published to presence <- "hello from react"
+Published to $SYS/ICcViaM/new/subscribes <- {"clientId":"mqttjs_48d5eed5","topic":"person"}
+Published to $SYS/ICcViaM/new/subscribes <- {"clientId":"mqttjs_48d5eed5","topic":"person/duration"}
+Client mqttjs_48d5eed5 unsubscribed from person.
+Client mqttjs_48d5eed5 unsubscribed from person/duration.
+Client mqttjs_48d5eed5
+Published to $SYS/ICcViaM/new/unsubscribes <- {"clientId":"mqttjs_48d5eed5","topic":"person"}
+Published to $SYS/ICcViaM/new/unsubscribes <- {"clientId":"mqttjs_48d5eed5","topic":"person/duration"}
+Published to $SYS/ICcViaM/disconnect/clients <- mqttjs_48d5eed5
+Client mqttjs_48d5eed5 connected
+Published to $SYS/ICcViaM/new/clients <- mqttjs_48d5eed5
+Client mqttjs_48d5eed5 subscribed to person.
+Client mqttjs_48d5eed5 subscribed to person/duration.
+Published to presence <- "hello from react"
+Published to $SYS/ICcViaM/new/subscribes <- {"clientId":"mqttjs_48d5eed5","topic":"person"}
+Published to $SYS/ICcViaM/new/subscribes <- {"clientId":"mqttjs_48d5eed5","topic":"person/duration"}
+Client 5a683d8c-7d54-406a-844e-8ce5a7632327 connected
+Published to $SYS/ICcViaM/new/clients <- 5a683d8c-7d54-406a-844e-8ce5a7632327
+Client 5a683d8c-7d54-406a-844e-8ce5a7632327
+Published to $SYS/ICcViaM/disconnect/clients <- 5a683d8c-7d54-406a-844e-8ce5a7632327
+Client 1d2c9cfd-2d44-4191-9413-98233c3035de connected
+Published to $SYS/ICcViaM/new/clients <- 1d2c9cfd-2d44-4191-9413-98233c3035de
+Client 1d2c9cfd-2d44-4191-9413-98233c3035de
+Published to $SYS/ICcViaM/disconnect/clients <- 1d2c9cfd-2d44-4191-9413-98233c3035de
+Client mqttjs_48d5eed5 unsubscribed from person.
+Client mqttjs_48d5eed5 unsubscribed from person/duration.
+Client mqttjs_48d5eed5
+Published to $SYS/ICcViaM/new/unsubscribes <- {"clientId":"mqttjs_48d5eed5","topic":"person"}
+Published to $SYS/ICcViaM/new/unsubscribes <- {"clientId":"mqttjs_48d5eed5","topic":"person/duration"}
+Published to $SYS/ICcViaM/disconnect/clients <- mqttjs_48d5eed5
+Client mqttjs_48d5eed5 connected
+Published to $SYS/ICcViaM/new/clients <- mqttjs_48d5eed5
+Client mqttjs_48d5eed5 subscribed to person.
+Client mqttjs_48d5eed5 subscribed to person/duration.
+Published to presence <- "hello from react"
+Published to $SYS/ICcViaM/new/subscribes <- {"clientId":"mqttjs_48d5eed5","topic":"person"}
+Published to $SYS/ICcViaM/new/subscribes <- {"clientId":"mqttjs_48d5eed5","topic":"person/duration"}
+Client 0adf70d8-3ebf-461b-9154-40985e2e89d7 connected
+Published to $SYS/ICcViaM/new/clients <- 0adf70d8-3ebf-461b-9154-40985e2e89d7
+Client 0adf70d8-3ebf-461b-9154-40985e2e89d7
+Published to $SYS/ICcViaM/disconnect/clients <- 0adf70d8-3ebf-461b-9154-40985e2e89d7
+Client mqttjs_48d5eed5 unsubscribed from person.
+Client mqttjs_48d5eed5 unsubscribed from person/duration.
+Client mqttjs_48d5eed5
+Published to $SYS/ICcViaM/new/unsubscribes <- {"clientId":"mqttjs_48d5eed5","topic":"person"}
+Published to $SYS/ICcViaM/new/unsubscribes <- {"clientId":"mqttjs_48d5eed5","topic":"person/duration"}
+Published to $SYS/ICcViaM/disconnect/clients <- mqttjs_48d5eed5
+Client mqttjs_48d5eed5 connected
+Published to $SYS/ICcViaM/new/clients <- mqttjs_48d5eed5
+Client mqttjs_48d5eed5 subscribed to person.
+Client mqttjs_48d5eed5 subscribed to person/duration.
+Published to presence <- "hello from react"
+Published to $SYS/ICcViaM/new/subscribes <- {"clientId":"mqttjs_48d5eed5","topic":"person"}
+Published to $SYS/ICcViaM/new/subscribes <- {"clientId":"mqttjs_48d5eed5","topic":"person/duration"}
+Client 15efbf6f-1d14-4e44-98dc-a63bb191b7b7 connected
+Published to $SYS/ICcViaM/new/clients <- 15efbf6f-1d14-4e44-98dc-a63bb191b7b7
+Client 15efbf6f-1d14-4e44-98dc-a63bb191b7b7
+Published to $SYS/ICcViaM/disconnect/clients <- 15efbf6f-1d14-4e44-98dc-a63bb191b7b7
+Client mqttjs_48d5eed5 unsubscribed from person.
+Client mqttjs_48d5eed5 unsubscribed from person/duration.
+Client mqttjs_48d5eed5
+Published to $SYS/ICcViaM/new/unsubscribes <- {"clientId":"mqttjs_48d5eed5","topic":"person"}
+Published to $SYS/ICcViaM/new/unsubscribes <- {"clientId":"mqttjs_48d5eed5","topic":"person/duration"}
+Published to $SYS/ICcViaM/disconnect/clients <- mqttjs_48d5eed5
+Client ec124ce5-e87d-41ad-bf21-46860110afe3 connected
+Published to $SYS/ICcViaM/new/clients <- ec124ce5-e87d-41ad-bf21-46860110afe3
+Client ec124ce5-e87d-41ad-bf21-46860110afe3
+Published to $SYS/ICcViaM/disconnect/clients <- ec124ce5-e87d-41ad-bf21-46860110afe3

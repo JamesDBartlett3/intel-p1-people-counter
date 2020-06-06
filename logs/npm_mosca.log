@@ -1,0 +1,1512 @@
+
+> fs-ext@0.5.0 install /home/workspace/webservice/server/node_modules/fs-ext
+> node-gyp configure build
+
+make: Entering directory '/home/workspace/webservice/server/node_modules/fs-ext/build'
+  CXX(target) Release/obj.target/fs-ext/fs-ext.o
+In file included from ../../nan/nan.h:190:0,
+                 from ../fs-ext.cc:27:
+../../nan/nan_maybe_43_inl.h: In function ‘Nan::Maybe<bool> Nan::ForceSet(v8::Local<v8::Object>, v8::Local<v8::Value>, v8::Local<v8::Value>, v8::PropertyAttribute)’:
+../../nan/nan_maybe_43_inl.h:88:15: error: ‘class v8::Object’ has no member named ‘ForceSet’
+   return obj->ForceSet(GetCurrentContext(), key, value, attribs);
+               ^~~~~~~~
+In file included from ../../nan/nan_new.h:189:0,
+                 from ../../nan/nan.h:196,
+                 from ../fs-ext.cc:27:
+../../nan/nan_implementation_12_inl.h: In static member function ‘static Nan::imp::FactoryBase<v8::StringObject>::return_t Nan::imp::Factory<v8::StringObject>::New(v8::Local<v8::String>)’:
+../../nan/nan_implementation_12_inl.h:345:37: warning: ‘static v8::Local<v8::Value> v8::StringObject::New(v8::Local<v8::String>)’ is deprecated: Use Isolate* version [-Wdeprecated-declarations]
+   return v8::StringObject::New(value).As<v8::StringObject>();
+                                     ^
+In file included from /root/.node-gyp/11.15.0/include/node/v8.h:26:0,
+                 from /root/.node-gyp/11.15.0/include/node/node.h:63,
+                 from ../fs-ext.cc:20:
+/root/.node-gyp/11.15.0/include/node/v8.h:5242:37: note: declared here
+                 static Local<Value> New(Local<String> value));
+                                     ^
+/root/.node-gyp/11.15.0/include/node/v8config.h:326:3: note: in definition of macro ‘V8_DEPRECATED’
+   declarator __attribute__((deprecated(message)))
+   ^~~~~~~~~~
+In file included from ../fs-ext.cc:27:0:
+../../nan/nan.h: In function ‘v8::Local<v8::Value> Nan::MakeCallback(v8::Local<v8::Object>, v8::Local<v8::Function>, int, v8::Local<v8::Value>*)’:
+../../nan/nan.h:817:60: warning: ‘v8::Local<v8::Value> node::MakeCallback(v8::Isolate*, v8::Local<v8::Object>, v8::Local<v8::Function>, int, v8::Local<v8::Value>*)’ is deprecated: Use MakeCallback(..., async_context) [-Wdeprecated-declarations]
+         v8::Isolate::GetCurrent(), target, func, argc, argv);
+                                                            ^
+In file included from ../fs-ext.cc:20:0:
+/root/.node-gyp/11.15.0/include/node/node.h:174:50: note: declared here
+                 NODE_EXTERN v8::Local<v8::Value> MakeCallback(
+                                                  ^
+/root/.node-gyp/11.15.0/include/node/node.h:93:42: note: in definition of macro ‘NODE_DEPRECATED’
+     __attribute__((deprecated(message))) declarator
+                                          ^~~~~~~~~~
+In file included from ../fs-ext.cc:27:0:
+../../nan/nan.h: In function ‘v8::Local<v8::Value> Nan::MakeCallback(v8::Local<v8::Object>, v8::Local<v8::String>, int, v8::Local<v8::Value>*)’:
+../../nan/nan.h:831:62: warning: ‘v8::Local<v8::Value> node::MakeCallback(v8::Isolate*, v8::Local<v8::Object>, v8::Local<v8::String>, int, v8::Local<v8::Value>*)’ is deprecated: Use MakeCallback(..., async_context) [-Wdeprecated-declarations]
+         v8::Isolate::GetCurrent(), target, symbol, argc, argv);
+                                                              ^
+In file included from ../fs-ext.cc:20:0:
+/root/.node-gyp/11.15.0/include/node/node.h:167:50: note: declared here
+                 NODE_EXTERN v8::Local<v8::Value> MakeCallback(
+                                                  ^
+/root/.node-gyp/11.15.0/include/node/node.h:93:42: note: in definition of macro ‘NODE_DEPRECATED’
+     __attribute__((deprecated(message))) declarator
+                                          ^~~~~~~~~~
+In file included from ../fs-ext.cc:27:0:
+../../nan/nan.h: In function ‘v8::Local<v8::Value> Nan::MakeCallback(v8::Local<v8::Object>, const char*, int, v8::Local<v8::Value>*)’:
+../../nan/nan.h:845:62: warning: ‘v8::Local<v8::Value> node::MakeCallback(v8::Isolate*, v8::Local<v8::Object>, const char*, int, v8::Local<v8::Value>*)’ is deprecated: Use MakeCallback(..., async_context) [-Wdeprecated-declarations]
+         v8::Isolate::GetCurrent(), target, method, argc, argv);
+                                                              ^
+In file included from ../fs-ext.cc:20:0:
+/root/.node-gyp/11.15.0/include/node/node.h:160:50: note: declared here
+                 NODE_EXTERN v8::Local<v8::Value> MakeCallback(
+                                                  ^
+/root/.node-gyp/11.15.0/include/node/node.h:93:42: note: in definition of macro ‘NODE_DEPRECATED’
+     __attribute__((deprecated(message))) declarator
+                                          ^~~~~~~~~~
+In file included from ../fs-ext.cc:27:0:
+../../nan/nan.h: In constructor ‘Nan::Utf8String::Utf8String(v8::Local<v8::Value>)’:
+../../nan/nan.h:890:53: warning: ‘v8::Local<v8::String> v8::Value::ToString() const’ is deprecated: Use maybe version [-Wdeprecated-declarations]
+       v8::Local<v8::String> string = from->ToString();
+                                                     ^
+In file included from /root/.node-gyp/11.15.0/include/node/node.h:63:0,
+                 from ../fs-ext.cc:20:
+/root/.node-gyp/11.15.0/include/node/v8.h:10251:15: note: declared here
+ Local<String> Value::ToString() const {
+               ^~~~~
+In file included from ../fs-ext.cc:27:0:
+../../nan/nan.h:900:74: warning: ‘int v8::String::WriteUtf8(char*, int, int*, int) const’ is deprecated: Use Isolate* version [-Wdeprecated-declarations]
+         length_ = string->WriteUtf8(str_, static_cast<int>(len), 0, flags);
+                                                                          ^
+In file included from /root/.node-gyp/11.15.0/include/node/v8.h:26:0,
+                 from /root/.node-gyp/11.15.0/include/node/node.h:63,
+                 from ../fs-ext.cc:20:
+/root/.node-gyp/11.15.0/include/node/v8.h:2754:21: note: declared here
+                 int WriteUtf8(char* buffer, int length = -1,
+                     ^
+/root/.node-gyp/11.15.0/include/node/v8config.h:326:3: note: in definition of macro ‘V8_DEPRECATED’
+   declarator __attribute__((deprecated(message)))
+   ^~~~~~~~~~
+In file included from ../fs-ext.cc:27:0:
+../../nan/nan.h: In member function ‘v8::Local<v8::Value> Nan::Callback::Call_(v8::Isolate*, v8::Local<v8::Object>, int, v8::Local<v8::Value>*) const’:
+../../nan/nan.h:1463:5: warning: ‘v8::Local<v8::Value> node::MakeCallback(v8::Isolate*, v8::Local<v8::Object>, v8::Local<v8::Function>, int, v8::Local<v8::Value>*)’ is deprecated: Use MakeCallback(..., async_context) [-Wdeprecated-declarations]
+     ));
+     ^
+In file included from ../fs-ext.cc:20:0:
+/root/.node-gyp/11.15.0/include/node/node.h:174:50: note: declared here
+                 NODE_EXTERN v8::Local<v8::Value> MakeCallback(
+                                                  ^
+/root/.node-gyp/11.15.0/include/node/node.h:93:42: note: in definition of macro ‘NODE_DEPRECATED’
+     __attribute__((deprecated(message))) declarator
+                                          ^~~~~~~~~~
+../fs-ext.cc: In function ‘void EIO_After(uv_work_t*)’:
+../fs-ext.cc:108:20: warning: ‘v8::Local<v8::Value> Nan::NanErrnoException(int, const char*, const char*, const char*)’ is deprecated [-Wdeprecated-declarations]
+     argv[0] = Nan::NanErrnoException(store_data->error);
+                    ^~~~~~~~~~~~~~~~~
+In file included from ../fs-ext.cc:27:0:
+../../nan/nan.h:862:46: note: declared here
+   NAN_DEPRECATED inline v8::Local<v8::Value> NanErrnoException(
+                                              ^~~~~~~~~~~~~~~~~
+../fs-ext.cc:108:55: warning: ‘v8::Local<v8::Value> Nan::NanErrnoException(int, const char*, const char*, const char*)’ is deprecated [-Wdeprecated-declarations]
+     argv[0] = Nan::NanErrnoException(store_data->error);
+                                                       ^
+In file included from ../fs-ext.cc:27:0:
+../../nan/nan.h:862:46: note: declared here
+   NAN_DEPRECATED inline v8::Local<v8::Value> NanErrnoException(
+                                              ^~~~~~~~~~~~~~~~~
+../fs-ext.cc: In function ‘Nan::NAN_METHOD_RETURN_TYPE Flock(Nan::NAN_METHOD_ARGS_TYPE)’:
+../fs-ext.cc:281:40: warning: ‘int32_t v8::Value::Int32Value() const’ is deprecated: Use maybe version [-Wdeprecated-declarations]
+   flock_data->fd = info[0]->Int32Value();
+                                        ^
+In file included from /root/.node-gyp/11.15.0/include/node/v8.h:26:0,
+                 from /root/.node-gyp/11.15.0/include/node/node.h:63,
+                 from ../fs-ext.cc:20:
+/root/.node-gyp/11.15.0/include/node/v8.h:2572:46: note: declared here
+   V8_DEPRECATED("Use maybe version", int32_t Int32Value() const);
+                                              ^
+/root/.node-gyp/11.15.0/include/node/v8config.h:326:3: note: in definition of macro ‘V8_DEPRECATED’
+   declarator __attribute__((deprecated(message)))
+   ^~~~~~~~~~
+../fs-ext.cc:282:42: warning: ‘int32_t v8::Value::Int32Value() const’ is deprecated: Use maybe version [-Wdeprecated-declarations]
+   flock_data->oper = info[1]->Int32Value();
+                                          ^
+In file included from /root/.node-gyp/11.15.0/include/node/v8.h:26:0,
+                 from /root/.node-gyp/11.15.0/include/node/node.h:63,
+                 from ../fs-ext.cc:20:
+/root/.node-gyp/11.15.0/include/node/v8.h:2572:46: note: declared here
+   V8_DEPRECATED("Use maybe version", int32_t Int32Value() const);
+                                              ^
+/root/.node-gyp/11.15.0/include/node/v8config.h:326:3: note: in definition of macro ‘V8_DEPRECATED’
+   declarator __attribute__((deprecated(message)))
+   ^~~~~~~~~~
+../fs-ext.cc:297:45: warning: ‘v8::Local<v8::Value> Nan::NanErrnoException(int, const char*, const char*, const char*)’ is deprecated [-Wdeprecated-declarations]
+     if (i != 0) return Nan::ThrowError(Nan::NanErrnoException(errno));
+                                             ^~~~~~~~~~~~~~~~~
+In file included from ../fs-ext.cc:27:0:
+../../nan/nan.h:862:46: note: declared here
+   NAN_DEPRECATED inline v8::Local<v8::Value> NanErrnoException(
+                                              ^~~~~~~~~~~~~~~~~
+../fs-ext.cc:297:68: warning: ‘v8::Local<v8::Value> Nan::NanErrnoException(int, const char*, const char*, const char*)’ is deprecated [-Wdeprecated-declarations]
+     if (i != 0) return Nan::ThrowError(Nan::NanErrnoException(errno));
+                                                                    ^
+In file included from ../fs-ext.cc:27:0:
+../../nan/nan.h:862:46: note: declared here
+   NAN_DEPRECATED inline v8::Local<v8::Value> NanErrnoException(
+                                              ^~~~~~~~~~~~~~~~~
+../fs-ext.cc: In function ‘Nan::NAN_METHOD_RETURN_TYPE Seek(Nan::NAN_METHOD_ARGS_TYPE)’:
+../fs-ext.cc:332:32: warning: ‘int32_t v8::Value::Int32Value() const’ is deprecated: Use maybe version [-Wdeprecated-declarations]
+   int fd = info[0]->Int32Value();
+                                ^
+In file included from /root/.node-gyp/11.15.0/include/node/v8.h:26:0,
+                 from /root/.node-gyp/11.15.0/include/node/node.h:63,
+                 from ../fs-ext.cc:20:
+/root/.node-gyp/11.15.0/include/node/v8.h:2572:46: note: declared here
+   V8_DEPRECATED("Use maybe version", int32_t Int32Value() const);
+                                              ^
+/root/.node-gyp/11.15.0/include/node/v8config.h:326:3: note: in definition of macro ‘V8_DEPRECATED’
+   declarator __attribute__((deprecated(message)))
+   ^~~~~~~~~~
+../fs-ext.cc:317:74: warning: ‘double v8::Value::NumberValue() const’ is deprecated: Use maybe version [-Wdeprecated-declarations]
+   if (!(a)->IsUndefined() && !(a)->IsNull() && !IsInt64((a)->NumberValue())) { \
+                                                                          ^
+../fs-ext.cc:333:3: note: in expansion of macro ‘ASSERT_OFFSET’
+   ASSERT_OFFSET(info[1]);
+   ^~~~~~~~~~~~~
+In file included from /root/.node-gyp/11.15.0/include/node/v8.h:26:0,
+                 from /root/.node-gyp/11.15.0/include/node/node.h:63,
+                 from ../fs-ext.cc:20:
+/root/.node-gyp/11.15.0/include/node/v8.h:2569:45: note: declared here
+   V8_DEPRECATED("Use maybe version", double NumberValue() const);
+                                             ^
+/root/.node-gyp/11.15.0/include/node/v8config.h:326:3: note: in definition of macro ‘V8_DEPRECATED’
+   declarator __attribute__((deprecated(message)))
+   ^~~~~~~~~~
+../fs-ext.cc:320:60: warning: ‘int64_t v8::Value::IntegerValue() const’ is deprecated: Use maybe version [-Wdeprecated-declarations]
+ #define GET_OFFSET(a) ((a)->IsNumber() ? (a)->IntegerValue() : -1)
+                                                            ^
+../fs-ext.cc:334:16: note: in expansion of macro ‘GET_OFFSET’
+   off_t offs = GET_OFFSET(info[1]);
+                ^~~~~~~~~~
+In file included from /root/.node-gyp/11.15.0/include/node/v8.h:26:0,
+                 from /root/.node-gyp/11.15.0/include/node/node.h:63,
+                 from ../fs-ext.cc:20:
+/root/.node-gyp/11.15.0/include/node/v8.h:2570:46: note: declared here
+   V8_DEPRECATED("Use maybe version", int64_t IntegerValue() const);
+                                              ^
+/root/.node-gyp/11.15.0/include/node/v8config.h:326:3: note: in definition of macro ‘V8_DEPRECATED’
+   declarator __attribute__((deprecated(message)))
+   ^~~~~~~~~~
+../fs-ext.cc:335:36: warning: ‘int32_t v8::Value::Int32Value() const’ is deprecated: Use maybe version [-Wdeprecated-declarations]
+   int whence = info[2]->Int32Value();
+                                    ^
+In file included from /root/.node-gyp/11.15.0/include/node/v8.h:26:0,
+                 from /root/.node-gyp/11.15.0/include/node/node.h:63,
+                 from ../fs-ext.cc:20:
+/root/.node-gyp/11.15.0/include/node/v8.h:2572:46: note: declared here
+   V8_DEPRECATED("Use maybe version", int32_t Int32Value() const);
+                                              ^
+/root/.node-gyp/11.15.0/include/node/v8config.h:326:3: note: in definition of macro ‘V8_DEPRECATED’
+   declarator __attribute__((deprecated(message)))
+   ^~~~~~~~~~
+../fs-ext.cc:339:56: warning: ‘v8::Local<v8::Value> Nan::NanErrnoException(int, const char*, const char*, const char*)’ is deprecated [-Wdeprecated-declarations]
+     if (offs_result == -1) return Nan::ThrowError(Nan::NanErrnoException(errno));
+                                                        ^~~~~~~~~~~~~~~~~
+In file included from ../fs-ext.cc:27:0:
+../../nan/nan.h:862:46: note: declared here
+   NAN_DEPRECATED inline v8::Local<v8::Value> NanErrnoException(
+                                              ^~~~~~~~~~~~~~~~~
+../fs-ext.cc:339:79: warning: ‘v8::Local<v8::Value> Nan::NanErrnoException(int, const char*, const char*, const char*)’ is deprecated [-Wdeprecated-declarations]
+     if (offs_result == -1) return Nan::ThrowError(Nan::NanErrnoException(errno));
+                                                                               ^
+In file included from ../fs-ext.cc:27:0:
+../../nan/nan.h:862:46: note: declared here
+   NAN_DEPRECATED inline v8::Local<v8::Value> NanErrnoException(
+                                              ^~~~~~~~~~~~~~~~~
+../fs-ext.cc: In function ‘Nan::NAN_METHOD_RETURN_TYPE Fcntl(Nan::NAN_METHOD_ARGS_TYPE)’:
+../fs-ext.cc:369:32: warning: ‘int32_t v8::Value::Int32Value() const’ is deprecated: Use maybe version [-Wdeprecated-declarations]
+   int fd = info[0]->Int32Value();
+                                ^
+In file included from /root/.node-gyp/11.15.0/include/node/v8.h:26:0,
+                 from /root/.node-gyp/11.15.0/include/node/node.h:63,
+                 from ../fs-ext.cc:20:
+/root/.node-gyp/11.15.0/include/node/v8.h:2572:46: note: declared here
+   V8_DEPRECATED("Use maybe version", int32_t Int32Value() const);
+                                              ^
+/root/.node-gyp/11.15.0/include/node/v8config.h:326:3: note: in definition of macro ‘V8_DEPRECATED’
+   declarator __attribute__((deprecated(message)))
+   ^~~~~~~~~~
+../fs-ext.cc:370:33: warning: ‘int32_t v8::Value::Int32Value() const’ is deprecated: Use maybe version [-Wdeprecated-declarations]
+   int cmd = info[1]->Int32Value();
+                                 ^
+In file included from /root/.node-gyp/11.15.0/include/node/v8.h:26:0,
+                 from /root/.node-gyp/11.15.0/include/node/node.h:63,
+                 from ../fs-ext.cc:20:
+/root/.node-gyp/11.15.0/include/node/v8.h:2572:46: note: declared here
+   V8_DEPRECATED("Use maybe version", int32_t Int32Value() const);
+                                              ^
+/root/.node-gyp/11.15.0/include/node/v8config.h:326:3: note: in definition of macro ‘V8_DEPRECATED’
+   declarator __attribute__((deprecated(message)))
+   ^~~~~~~~~~
+../fs-ext.cc:371:33: warning: ‘int32_t v8::Value::Int32Value() const’ is deprecated: Use maybe version [-Wdeprecated-declarations]
+   int arg = info[2]->Int32Value();
+                                 ^
+In file included from /root/.node-gyp/11.15.0/include/node/v8.h:26:0,
+                 from /root/.node-gyp/11.15.0/include/node/node.h:63,
+                 from ../fs-ext.cc:20:
+/root/.node-gyp/11.15.0/include/node/v8.h:2572:46: note: declared here
+   V8_DEPRECATED("Use maybe version", int32_t Int32Value() const);
+                                              ^
+/root/.node-gyp/11.15.0/include/node/v8config.h:326:3: note: in definition of macro ‘V8_DEPRECATED’
+   declarator __attribute__((deprecated(message)))
+   ^~~~~~~~~~
+../fs-ext.cc:375:51: warning: ‘v8::Local<v8::Value> Nan::NanErrnoException(int, const char*, const char*, const char*)’ is deprecated [-Wdeprecated-declarations]
+     if (result == -1) return Nan::ThrowError(Nan::NanErrnoException(errno));
+                                                   ^~~~~~~~~~~~~~~~~
+In file included from ../fs-ext.cc:27:0:
+../../nan/nan.h:862:46: note: declared here
+   NAN_DEPRECATED inline v8::Local<v8::Value> NanErrnoException(
+                                              ^~~~~~~~~~~~~~~~~
+../fs-ext.cc:375:74: warning: ‘v8::Local<v8::Value> Nan::NanErrnoException(int, const char*, const char*, const char*)’ is deprecated [-Wdeprecated-declarations]
+     if (result == -1) return Nan::ThrowError(Nan::NanErrnoException(errno));
+                                                                          ^
+In file included from ../fs-ext.cc:27:0:
+../../nan/nan.h:862:46: note: declared here
+   NAN_DEPRECATED inline v8::Local<v8::Value> NanErrnoException(
+                                              ^~~~~~~~~~~~~~~~~
+../fs-ext.cc: In function ‘Nan::NAN_METHOD_RETURN_TYPE UTime(Nan::NAN_METHOD_ARGS_TYPE)’:
+../fs-ext.cc:423:44: warning: ‘v8::Local<v8::String> v8::Value::ToString() const’ is deprecated: Use maybe version [-Wdeprecated-declarations]
+   String::Utf8Value path(info[0]->ToString());
+                                            ^
+In file included from /root/.node-gyp/11.15.0/include/node/node.h:63:0,
+                 from ../fs-ext.cc:20:
+/root/.node-gyp/11.15.0/include/node/v8.h:10251:15: note: declared here
+ Local<String> Value::ToString() const {
+               ^~~~~
+../fs-ext.cc:423:45: warning: ‘v8::String::Utf8Value::Utf8Value(v8::Local<v8::Value>)’ is deprecated: Use Isolate version [-Wdeprecated-declarations]
+   String::Utf8Value path(info[0]->ToString());
+                                             ^
+In file included from /root/.node-gyp/11.15.0/include/node/v8.h:26:0,
+                 from /root/.node-gyp/11.15.0/include/node/node.h:63,
+                 from ../fs-ext.cc:20:
+/root/.node-gyp/11.15.0/include/node/v8.h:2992:28: note: declared here
+                   explicit Utf8Value(Local<v8::Value> obj));
+                            ^
+/root/.node-gyp/11.15.0/include/node/v8config.h:326:3: note: in definition of macro ‘V8_DEPRECATED’
+   declarator __attribute__((deprecated(message)))
+   ^~~~~~~~~~
+../fs-ext.cc:424:40: warning: ‘int64_t v8::Value::IntegerValue() const’ is deprecated: Use maybe version [-Wdeprecated-declarations]
+   time_t atime = info[1]->IntegerValue();
+                                        ^
+In file included from /root/.node-gyp/11.15.0/include/node/v8.h:26:0,
+                 from /root/.node-gyp/11.15.0/include/node/node.h:63,
+                 from ../fs-ext.cc:20:
+/root/.node-gyp/11.15.0/include/node/v8.h:2570:46: note: declared here
+   V8_DEPRECATED("Use maybe version", int64_t IntegerValue() const);
+                                              ^
+/root/.node-gyp/11.15.0/include/node/v8config.h:326:3: note: in definition of macro ‘V8_DEPRECATED’
+   declarator __attribute__((deprecated(message)))
+   ^~~~~~~~~~
+../fs-ext.cc:425:40: warning: ‘int64_t v8::Value::IntegerValue() const’ is deprecated: Use maybe version [-Wdeprecated-declarations]
+   time_t mtime = info[2]->IntegerValue();
+                                        ^
+In file included from /root/.node-gyp/11.15.0/include/node/v8.h:26:0,
+                 from /root/.node-gyp/11.15.0/include/node/node.h:63,
+                 from ../fs-ext.cc:20:
+/root/.node-gyp/11.15.0/include/node/v8.h:2570:46: note: declared here
+   V8_DEPRECATED("Use maybe version", int64_t IntegerValue() const);
+                                              ^
+/root/.node-gyp/11.15.0/include/node/v8config.h:326:3: note: in definition of macro ‘V8_DEPRECATED’
+   declarator __attribute__((deprecated(message)))
+   ^~~~~~~~~~
+../fs-ext.cc:433:47: warning: ‘v8::Local<v8::Value> Nan::NanErrnoException(int, const char*, const char*, const char*)’ is deprecated [-Wdeprecated-declarations]
+     if (ret != 0) return Nan::ThrowError(Nan::NanErrnoException(errno, "utime", "", *path));
+                                               ^~~~~~~~~~~~~~~~~
+In file included from ../fs-ext.cc:27:0:
+../../nan/nan.h:862:46: note: declared here
+   NAN_DEPRECATED inline v8::Local<v8::Value> NanErrnoException(
+                                              ^~~~~~~~~~~~~~~~~
+../fs-ext.cc:433:90: warning: ‘v8::Local<v8::Value> Nan::NanErrnoException(int, const char*, const char*, const char*)’ is deprecated [-Wdeprecated-declarations]
+     if (ret != 0) return Nan::ThrowError(Nan::NanErrnoException(errno, "utime", "", *path));
+                                                                                          ^
+In file included from ../fs-ext.cc:27:0:
+../../nan/nan.h:862:46: note: declared here
+   NAN_DEPRECATED inline v8::Local<v8::Value> NanErrnoException(
+                                              ^~~~~~~~~~~~~~~~~
+../fs-ext.cc: In function ‘Nan::NAN_METHOD_RETURN_TYPE StatVFS(Nan::NAN_METHOD_ARGS_TYPE)’:
+../fs-ext.cc:462:44: warning: ‘v8::Local<v8::String> v8::Value::ToString() const’ is deprecated: Use maybe version [-Wdeprecated-declarations]
+   String::Utf8Value path(info[0]->ToString());
+                                            ^
+In file included from /root/.node-gyp/11.15.0/include/node/node.h:63:0,
+                 from ../fs-ext.cc:20:
+/root/.node-gyp/11.15.0/include/node/v8.h:10251:15: note: declared here
+ Local<String> Value::ToString() const {
+               ^~~~~
+../fs-ext.cc:462:45: warning: ‘v8::String::Utf8Value::Utf8Value(v8::Local<v8::Value>)’ is deprecated: Use Isolate version [-Wdeprecated-declarations]
+   String::Utf8Value path(info[0]->ToString());
+                                             ^
+In file included from /root/.node-gyp/11.15.0/include/node/v8.h:26:0,
+                 from /root/.node-gyp/11.15.0/include/node/node.h:63,
+                 from ../fs-ext.cc:20:
+/root/.node-gyp/11.15.0/include/node/v8.h:2992:28: note: declared here
+                   explicit Utf8Value(Local<v8::Value> obj));
+                            ^
+/root/.node-gyp/11.15.0/include/node/v8config.h:326:3: note: in definition of macro ‘V8_DEPRECATED’
+   declarator __attribute__((deprecated(message)))
+   ^~~~~~~~~~
+../fs-ext.cc:469:47: warning: ‘v8::Local<v8::Value> Nan::NanErrnoException(int, const char*, const char*, const char*)’ is deprecated [-Wdeprecated-declarations]
+     if (ret != 0) return Nan::ThrowError(Nan::NanErrnoException(errno, "statvfs", "", *path));
+                                               ^~~~~~~~~~~~~~~~~
+In file included from ../fs-ext.cc:27:0:
+../../nan/nan.h:862:46: note: declared here
+   NAN_DEPRECATED inline v8::Local<v8::Value> NanErrnoException(
+                                              ^~~~~~~~~~~~~~~~~
+../fs-ext.cc:469:92: warning: ‘v8::Local<v8::Value> Nan::NanErrnoException(int, const char*, const char*, const char*)’ is deprecated [-Wdeprecated-declarations]
+     if (ret != 0) return Nan::ThrowError(Nan::NanErrnoException(errno, "statvfs", "", *path));
+                                                                                            ^
+In file included from ../fs-ext.cc:27:0:
+../../nan/nan.h:862:46: note: declared here
+   NAN_DEPRECATED inline v8::Local<v8::Value> NanErrnoException(
+                                              ^~~~~~~~~~~~~~~~~
+fs-ext.target.mk:101: recipe for target 'Release/obj.target/fs-ext/fs-ext.o' failed
+make: *** [Release/obj.target/fs-ext/fs-ext.o] Error 1
+make: Leaving directory '/home/workspace/webservice/server/node_modules/fs-ext/build'
+gyp ERR! build error 
+gyp ERR! stack Error: `make` failed with exit code: 2
+gyp ERR! stack     at ChildProcess.onExit (/usr/lib/node_modules/npm/node_modules/node-gyp/lib/build.js:262:23)
+gyp ERR! stack     at ChildProcess.emit (events.js:193:13)
+gyp ERR! stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:255:12)
+gyp ERR! System Linux 4.15.0-1058-gcp
+gyp ERR! command "/usr/bin/node" "/usr/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js" "configure" "build"
+gyp ERR! cwd /home/workspace/webservice/server/node_modules/fs-ext
+gyp ERR! node -v v11.15.0
+gyp ERR! node-gyp -v v3.8.0
+gyp ERR! not ok 
+
+> leveldown@1.4.6 install /home/workspace/webservice/server/node_modules/leveldown
+> prebuild --install
+
+prebuild info begin Prebuild version 4.5.0
+prebuild info looking for local prebuild @ prebuilds/leveldown-v1.4.6-node-v67-linux-x64.tar.gz
+prebuild info looking for cached prebuild @ /root/.npm/_prebuilds/https-github.com-level-leveldown-releases-download-v1.4.6-leveldown-v1.4.6-node-v67-linux-x64.tar.gz
+prebuild http request GET https://github.com/level/leveldown/releases/download/v1.4.6/leveldown-v1.4.6-node-v67-linux-x64.tar.gz
+prebuild http 404 https://github.com/level/leveldown/releases/download/v1.4.6/leveldown-v1.4.6-node-v67-linux-x64.tar.gz
+prebuild WARN install No prebuilt binaries found (target=v11.15.0 arch=x64 platform=linux)
+prebuild info install We will now try to compile from source.
+prebuild verb starting node-gyp process 
+prebuild verb execute node-gyp with `node index.js rebuild --target=v11.15.0 --target_arch=x64` 
+gyp verb command rebuild []
+prebuild verb ok 
+gyp verb command clean []
+gyp verb clean removing "build" directory
+prebuild verb ok 
+gyp verb command configure []
+gyp verb check python checking for Python executable "python2" in the PATH
+gyp verb `which` succeeded python2 /usr/bin/python2
+gyp verb check python version `/usr/bin/python2 -c "import platform; print(platform.python_version());"` returned: "2.7.12\n"
+gyp verb get node dir no --target version specified, falling back to host node version: 11.15.0
+gyp verb command install [ '11.15.0' ]
+gyp verb install input version string "11.15.0"
+gyp verb install installing version: 11.15.0
+gyp verb install --ensure was passed, so won't reinstall if already installed
+gyp verb install version is already installed, need to check "installVersion"
+gyp verb got "installVersion" 9
+gyp verb needs "installVersion" 9
+gyp verb install version is good
+gyp verb get node dir target node version installed: 11.15.0
+gyp verb build dir attempting to create "build" dir: /home/workspace/webservice/server/node_modules/leveldown/build
+gyp verb build dir "build" dir needed to be created? /home/workspace/webservice/server/node_modules/leveldown/build
+gyp verb build/config.gypi creating config file
+gyp sill build/config.gypi { target_defaults:
+gyp sill build/config.gypi    { cflags: [],
+gyp sill build/config.gypi      default_configuration: 'Release',
+gyp sill build/config.gypi      defines: [],
+gyp sill build/config.gypi      include_dirs: [],
+gyp sill build/config.gypi      libraries: [] },
+gyp sill build/config.gypi   variables:
+gyp sill build/config.gypi    { asan: 0,
+gyp sill build/config.gypi      build_v8_with_gn: false,
+gyp sill build/config.gypi      coverage: false,
+gyp sill build/config.gypi      debug_nghttp2: false,
+gyp sill build/config.gypi      enable_lto: false,
+gyp sill build/config.gypi      enable_pgo_generate: false,
+gyp sill build/config.gypi      enable_pgo_use: false,
+gyp sill build/config.gypi      force_dynamic_crt: 0,
+gyp sill build/config.gypi      gas_version: '2.27',
+gyp sill build/config.gypi      host_arch: 'x64',
+gyp sill build/config.gypi      icu_data_in: '../../deps/icu-small/source/data/in/icudt63l.dat',
+gyp sill build/config.gypi      icu_endianness: 'l',
+gyp sill build/config.gypi      icu_gyp_path: 'tools/icu/icu-generic.gyp',
+gyp sill build/config.gypi      icu_locales: 'en,root',
+gyp sill build/config.gypi      icu_path: 'deps/icu-small',
+gyp sill build/config.gypi      icu_small: true,
+gyp sill build/config.gypi      icu_ver_major: '63',
+gyp sill build/config.gypi      llvm_version: 0,
+gyp sill build/config.gypi      node_byteorder: 'little',
+gyp sill build/config.gypi      node_debug_lib: false,
+gyp sill build/config.gypi      node_enable_d8: false,
+gyp sill build/config.gypi      node_enable_v8_vtunejit: false,
+gyp sill build/config.gypi      node_experimental_http_parser: false,
+gyp sill build/config.gypi      node_install_npm: true,
+gyp sill build/config.gypi      node_module_version: 67,
+gyp sill build/config.gypi      node_no_browser_globals: false,
+gyp sill build/config.gypi      node_prefix: '/',
+gyp sill build/config.gypi      node_release_urlbase: 'https://nodejs.org/download/release/',
+gyp sill build/config.gypi      node_report: true,
+gyp sill build/config.gypi      node_shared: false,
+gyp sill build/config.gypi      node_shared_cares: false,
+gyp sill build/config.gypi      node_shared_http_parser: false,
+gyp sill build/config.gypi      node_shared_libuv: false,
+gyp sill build/config.gypi      node_shared_nghttp2: false,
+gyp sill build/config.gypi      node_shared_openssl: false,
+gyp sill build/config.gypi      node_shared_zlib: false,
+gyp sill build/config.gypi      node_tag: '',
+gyp sill build/config.gypi      node_target_type: 'executable',
+gyp sill build/config.gypi      node_use_bundled_v8: true,
+gyp sill build/config.gypi      node_use_dtrace: false,
+gyp sill build/config.gypi      node_use_etw: false,
+gyp sill build/config.gypi      node_use_large_pages: false,
+gyp sill build/config.gypi      node_use_openssl: true,
+gyp sill build/config.gypi      node_use_pch: false,
+gyp sill build/config.gypi      node_use_v8_platform: true,
+gyp sill build/config.gypi      node_with_ltcg: false,
+gyp sill build/config.gypi      node_without_node_options: false,
+gyp sill build/config.gypi      openssl_fips: '',
+gyp sill build/config.gypi      openssl_is_fips: false,
+gyp sill build/config.gypi      shlib_suffix: 'so.67',
+gyp sill build/config.gypi      target_arch: 'x64',
+gyp sill build/config.gypi      v8_enable_gdbjit: 0,
+gyp sill build/config.gypi      v8_enable_i18n_support: 1,
+gyp sill build/config.gypi      v8_enable_inspector: 1,
+gyp sill build/config.gypi      v8_no_strict_aliasing: 1,
+gyp sill build/config.gypi      v8_optimized_debug: 1,
+gyp sill build/config.gypi      v8_promise_internal_field_count: 1,
+gyp sill build/config.gypi      v8_random_seed: 0,
+gyp sill build/config.gypi      v8_trace_maps: 0,
+gyp sill build/config.gypi      v8_use_siphash: true,
+gyp sill build/config.gypi      v8_use_snapshot: true,
+gyp sill build/config.gypi      want_separate_host_toolset: 0,
+gyp sill build/config.gypi      nodedir: '/root/.node-gyp/11.15.0',
+gyp sill build/config.gypi      copy_dev_lib: true,
+gyp sill build/config.gypi      standalone_static_library: 1,
+gyp sill build/config.gypi      target: 'v11.15.0',
+gyp sill build/config.gypi      cache_lock_stale: '60000',
+gyp sill build/config.gypi      ham_it_up: '',
+gyp sill build/config.gypi      legacy_bundling: '',
+gyp sill build/config.gypi      sign_git_tag: '',
+gyp sill build/config.gypi      user_agent: 'npm/6.7.0 node/v11.15.0 linux x64',
+gyp sill build/config.gypi      always_auth: '',
+gyp sill build/config.gypi      bin_links: 'true',
+gyp sill build/config.gypi      key: '',
+gyp sill build/config.gypi      allow_same_version: '',
+gyp sill build/config.gypi      description: 'true',
+gyp sill build/config.gypi      fetch_retries: '2',
+gyp sill build/config.gypi      heading: 'npm',
+gyp sill build/config.gypi      if_present: '',
+gyp sill build/config.gypi      init_version: '1.0.0',
+gyp sill build/config.gypi      user: '',
+gyp sill build/config.gypi      prefer_online: '',
+gyp sill build/config.gypi      noproxy: '',
+gyp sill build/config.gypi      force: '',
+gyp sill build/config.gypi      only: '',
+gyp sill build/config.gypi      read_only: '',
+gyp sill build/config.gypi      cache_min: '10',
+gyp sill build/config.gypi      init_license: 'ISC',
+gyp sill build/config.gypi      editor: 'vi',
+gyp sill build/config.gypi      rollback: 'true',
+gyp sill build/config.gypi      tag_version_prefix: 'v',
+gyp sill build/config.gypi      cache_max: 'Infinity',
+gyp sill build/config.gypi      timing: '',
+gyp sill build/config.gypi      userconfig: '/root/.npmrc',
+gyp sill build/config.gypi      engine_strict: '',
+gyp sill build/config.gypi      init_author_name: '',
+gyp sill build/config.gypi      init_author_url: '',
+gyp sill build/config.gypi      preid: '',
+gyp sill build/config.gypi      tmp: '/tmp',
+gyp sill build/config.gypi      depth: 'Infinity',
+gyp sill build/config.gypi      package_lock_only: '',
+gyp sill build/config.gypi      save_dev: '',
+gyp sill build/config.gypi      usage: '',
+gyp sill build/config.gypi      metrics_registry: 'https://registry.npmjs.org/',
+gyp sill build/config.gypi      otp: '',
+gyp sill build/config.gypi      package_lock: 'true',
+gyp sill build/config.gypi      progress: 'true',
+gyp sill build/config.gypi      https_proxy: '',
+gyp sill build/config.gypi      save_prod: '',
+gyp sill build/config.gypi      audit: 'true',
+gyp sill build/config.gypi      cidr: '',
+gyp sill build/config.gypi      onload_script: '',
+gyp sill build/config.gypi      sso_type: 'oauth',
+gyp sill build/config.gypi      rebuild_bundle: 'true',
+gyp sill build/config.gypi      save_bundle: '',
+gyp sill build/config.gypi      shell: '/bin/bash',
+gyp sill build/config.gypi      dry_run: '',
+gyp sill build/config.gypi      prefix: '/usr',
+gyp sill build/config.gypi      scope: '',
+gyp sill build/config.gypi      browser: '',
+gyp sill build/config.gypi      cache_lock_wait: '10000',
+gyp sill build/config.gypi      ignore_prepublish: '',
+gyp sill build/config.gypi      registry: 'https://registry.npmjs.org/',
+gyp sill build/config.gypi      save_optional: '',
+gyp sill build/config.gypi      searchopts: '',
+gyp sill build/config.gypi      versions: '',
+gyp sill build/config.gypi      cache: '/root/.npm',
+gyp sill build/config.gypi      send_metrics: '',
+gyp sill build/config.gypi      global_style: '',
+gyp sill build/config.gypi      ignore_scripts: '',
+gyp sill build/config.gypi      version: '',
+gyp sill build/config.gypi      local_address: '',
+gyp sill build/config.gypi      viewer: 'man',
+gyp sill build/config.gypi      node_gyp:
+gyp sill build/config.gypi       '/usr/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js',
+gyp sill build/config.gypi      audit_level: 'low',
+gyp sill build/config.gypi      prefer_offline: '',
+gyp sill build/config.gypi      color: 'true',
+gyp sill build/config.gypi      sign_git_commit: '',
+gyp sill build/config.gypi      fetch_retry_mintimeout: '10000',
+gyp sill build/config.gypi      maxsockets: '50',
+gyp sill build/config.gypi      offline: '',
+gyp sill build/config.gypi      sso_poll_frequency: '500',
+gyp sill build/config.gypi      umask: '0022',
+gyp sill build/config.gypi      fetch_retry_maxtimeout: '60000',
+gyp sill build/config.gypi      logs_max: '10',
+gyp sill build/config.gypi      message: '%s',
+gyp sill build/config.gypi      ca: '',
+gyp sill build/config.gypi      cert: '',
+gyp sill build/config.gypi      global: '',
+gyp sill build/config.gypi      link: '',
+gyp sill build/config.gypi      access: '',
+gyp sill build/config.gypi      also: '',
+gyp sill build/config.gypi      save: 'true',
+gyp sill build/config.gypi      unicode: 'true',
+gyp sill build/config.gypi      long: '',
+gyp sill build/config.gypi      production: '',
+gyp sill build/config.gypi      searchlimit: '20',
+gyp sill build/config.gypi      unsafe_perm: '',
+gyp sill build/config.gypi      update_notifier: 'true',
+gyp sill build/config.gypi      auth_type: 'legacy',
+gyp sill build/config.gypi      node_version: '11.15.0',
+gyp sill build/config.gypi      tag: 'latest',
+gyp sill build/config.gypi      git_tag_version: 'true',
+gyp sill build/config.gypi      commit_hooks: 'true',
+gyp sill build/config.gypi      script_shell: '',
+gyp sill build/config.gypi      shrinkwrap: 'true',
+gyp sill build/config.gypi      fetch_retry_factor: '10',
+gyp sill build/config.gypi      save_exact: '',
+gyp sill build/config.gypi      strict_ssl: 'true',
+gyp sill build/config.gypi      dev: '',
+gyp sill build/config.gypi      globalconfig: '/usr/etc/npmrc',
+gyp sill build/config.gypi      init_module: '/root/.npm-init.js',
+gyp sill build/config.gypi      parseable: '',
+gyp sill build/config.gypi      globalignorefile: '/usr/etc/npmignore',
+gyp sill build/config.gypi      cache_lock_retries: '10',
+gyp sill build/config.gypi      searchstaleness: '900',
+gyp sill build/config.gypi      node_options: '',
+gyp sill build/config.gypi      save_prefix: '^',
+gyp sill build/config.gypi      scripts_prepend_node_path: 'warn-only',
+gyp sill build/config.gypi      group: '',
+gyp sill build/config.gypi      init_author_email: '',
+gyp sill build/config.gypi      searchexclude: '',
+gyp sill build/config.gypi      git: 'git',
+gyp sill build/config.gypi      optional: 'true',
+gyp sill build/config.gypi      json: '' } }
+gyp verb build/config.gypi writing out config file: /home/workspace/webservice/server/node_modules/leveldown/build/config.gypi
+gyp verb config.gypi checking for gypi file: /home/workspace/webservice/server/node_modules/leveldown/config.gypi
+gyp verb common.gypi checking for gypi file: /home/workspace/webservice/server/node_modules/leveldown/common.gypi
+gyp verb gyp gyp format was not specified; forcing "make"
+gyp info spawn /usr/bin/python2
+gyp info spawn args [ '/home/workspace/webservice/server/node_modules/node-gyp/gyp/gyp_main.py',
+gyp info spawn args   'binding.gyp',
+gyp info spawn args   '-f',
+gyp info spawn args   'make',
+gyp info spawn args   '-I',
+gyp info spawn args   '/home/workspace/webservice/server/node_modules/leveldown/build/config.gypi',
+gyp info spawn args   '-I',
+gyp info spawn args   '/home/workspace/webservice/server/node_modules/node-gyp/addon.gypi',
+gyp info spawn args   '-I',
+gyp info spawn args   '/root/.node-gyp/11.15.0/include/node/common.gypi',
+gyp info spawn args   '-Dlibrary=shared_library',
+gyp info spawn args   '-Dvisibility=default',
+gyp info spawn args   '-Dnode_root_dir=/root/.node-gyp/11.15.0',
+gyp info spawn args   '-Dnode_gyp_dir=/home/workspace/webservice/server/node_modules/node-gyp',
+gyp info spawn args   '-Dnode_lib_file=node.lib',
+gyp info spawn args   '-Dmodule_root_dir=/home/workspace/webservice/server/node_modules/leveldown',
+gyp info spawn args   '--depth=.',
+gyp info spawn args   '--no-parallel',
+gyp info spawn args   '--generator-output',
+gyp info spawn args   'build',
+gyp info spawn args   '-Goutput_dir=.' ]
+prebuild verb ok 
+gyp verb command build []
+gyp verb build type Release
+gyp verb architecture x64
+gyp verb node dev dir /root/.node-gyp/11.15.0
+gyp verb `which` succeeded for `make` /usr/bin/make
+gyp info spawn make
+gyp info spawn args [ 'BUILDTYPE=Release', '-C', 'build' ]
+make: Entering directory '/home/workspace/webservice/server/node_modules/leveldown/build'
+  CXX(target) Release/obj.target/leveldb/deps/leveldb/leveldb-1.18.0/db/builder.o
+  CXX(target) Release/obj.target/leveldb/deps/leveldb/leveldb-1.18.0/db/db_impl.o
+  CXX(target) Release/obj.target/leveldb/deps/leveldb/leveldb-1.18.0/db/db_iter.o
+  CXX(target) Release/obj.target/leveldb/deps/leveldb/leveldb-1.18.0/db/filename.o
+  CXX(target) Release/obj.target/leveldb/deps/leveldb/leveldb-1.18.0/db/dbformat.o
+  CXX(target) Release/obj.target/leveldb/deps/leveldb/leveldb-1.18.0/db/leveldb_main.o
+  CXX(target) Release/obj.target/leveldb/deps/leveldb/leveldb-1.18.0/db/log_reader.o
+  CXX(target) Release/obj.target/leveldb/deps/leveldb/leveldb-1.18.0/db/log_writer.o
+  CXX(target) Release/obj.target/leveldb/deps/leveldb/leveldb-1.18.0/db/memtable.o
+  CXX(target) Release/obj.target/leveldb/deps/leveldb/leveldb-1.18.0/db/repair.o
+  CXX(target) Release/obj.target/leveldb/deps/leveldb/leveldb-1.18.0/db/table_cache.o
+  CXX(target) Release/obj.target/leveldb/deps/leveldb/leveldb-1.18.0/db/version_edit.o
+  CXX(target) Release/obj.target/leveldb/deps/leveldb/leveldb-1.18.0/db/version_set.o
+  CXX(target) Release/obj.target/leveldb/deps/leveldb/leveldb-1.18.0/db/write_batch.o
+  CXX(target) Release/obj.target/leveldb/deps/leveldb/leveldb-1.18.0/helpers/memenv/memenv.o
+  CXX(target) Release/obj.target/leveldb/deps/leveldb/leveldb-1.18.0/table/block.o
+  CXX(target) Release/obj.target/leveldb/deps/leveldb/leveldb-1.18.0/table/block_builder.o
+  CXX(target) Release/obj.target/leveldb/deps/leveldb/leveldb-1.18.0/table/filter_block.o
+  CXX(target) Release/obj.target/leveldb/deps/leveldb/leveldb-1.18.0/table/format.o
+  CXX(target) Release/obj.target/leveldb/deps/leveldb/leveldb-1.18.0/table/iterator.o
+  CXX(target) Release/obj.target/leveldb/deps/leveldb/leveldb-1.18.0/table/merger.o
+  CXX(target) Release/obj.target/leveldb/deps/leveldb/leveldb-1.18.0/table/table.o
+  CXX(target) Release/obj.target/leveldb/deps/leveldb/leveldb-1.18.0/table/table_builder.o
+  CXX(target) Release/obj.target/leveldb/deps/leveldb/leveldb-1.18.0/table/two_level_iterator.o
+  CXX(target) Release/obj.target/leveldb/deps/leveldb/leveldb-1.18.0/util/arena.o
+  CXX(target) Release/obj.target/leveldb/deps/leveldb/leveldb-1.18.0/util/bloom.o
+  CXX(target) Release/obj.target/leveldb/deps/leveldb/leveldb-1.18.0/util/cache.o
+  CXX(target) Release/obj.target/leveldb/deps/leveldb/leveldb-1.18.0/util/coding.o
+  CXX(target) Release/obj.target/leveldb/deps/leveldb/leveldb-1.18.0/util/comparator.o
+  CXX(target) Release/obj.target/leveldb/deps/leveldb/leveldb-1.18.0/util/crc32c.o
+  CXX(target) Release/obj.target/leveldb/deps/leveldb/leveldb-1.18.0/util/env.o
+  CXX(target) Release/obj.target/leveldb/deps/leveldb/leveldb-1.18.0/util/filter_policy.o
+  CXX(target) Release/obj.target/leveldb/deps/leveldb/leveldb-1.18.0/util/hash.o
+../deps/leveldb/leveldb-1.18.0/util/hash.cc: In function ‘uint32_t leveldb::Hash(const char*, size_t, uint32_t)’:
+../deps/leveldb/leveldb-1.18.0/util/hash.cc:37:9: warning: this statement may fall through [-Wimplicit-fallthrough=]
+       h += static_cast<unsigned char>(data[2]) << 16;
+       ~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../deps/leveldb/leveldb-1.18.0/util/hash.cc:39:5: note: here
+     case 2:
+     ^~~~
+../deps/leveldb/leveldb-1.18.0/util/hash.cc:40:9: warning: this statement may fall through [-Wimplicit-fallthrough=]
+       h += static_cast<unsigned char>(data[1]) << 8;
+       ~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../deps/leveldb/leveldb-1.18.0/util/hash.cc:42:5: note: here
+     case 1:
+     ^~~~
+  CXX(target) Release/obj.target/leveldb/deps/leveldb/leveldb-1.18.0/util/logging.o
+  CXX(target) Release/obj.target/leveldb/deps/leveldb/leveldb-1.18.0/util/options.o
+  CXX(target) Release/obj.target/leveldb/deps/leveldb/leveldb-1.18.0/util/status.o
+  CXX(target) Release/obj.target/leveldb/deps/leveldb/leveldb-1.18.0/port/port_posix.o
+  CXX(target) Release/obj.target/leveldb/deps/leveldb/leveldb-1.18.0/util/env_posix.o
+  AR(target) Release/obj.target/deps/leveldb/leveldb.a
+  COPY Release/leveldb.a
+  CXX(target) Release/obj.target/snappy/deps/snappy/snappy-1.1.1/snappy-sinksource.o
+  CXX(target) Release/obj.target/snappy/deps/snappy/snappy-1.1.1/snappy-stubs-internal.o
+  CXX(target) Release/obj.target/snappy/deps/snappy/snappy-1.1.1/snappy.o
+  AR(target) Release/obj.target/deps/snappy/snappy.a
+  COPY Release/snappy.a
+  CXX(target) Release/obj.target/leveldown/src/batch.o
+In file included from ../../nan/nan.h:190:0,
+                 from ../src/batch.cc:3:
+../../nan/nan_maybe_43_inl.h: In function ‘Nan::Maybe<bool> Nan::ForceSet(v8::Local<v8::Object>, v8::Local<v8::Value>, v8::Local<v8::Value>, v8::PropertyAttribute)’:
+../../nan/nan_maybe_43_inl.h:88:15: error: ‘class v8::Object’ has no member named ‘ForceSet’
+   return obj->ForceSet(GetCurrentContext(), key, value, attribs);
+               ^~~~~~~~
+In file included from ../../nan/nan_new.h:189:0,
+                 from ../../nan/nan.h:196,
+                 from ../src/batch.cc:3:
+../../nan/nan_implementation_12_inl.h: In static member function ‘static Nan::imp::FactoryBase<v8::StringObject>::return_t Nan::imp::Factory<v8::StringObject>::New(v8::Local<v8::String>)’:
+../../nan/nan_implementation_12_inl.h:345:37: warning: ‘static v8::Local<v8::Value> v8::StringObject::New(v8::Local<v8::String>)’ is deprecated: Use Isolate* version [-Wdeprecated-declarations]
+   return v8::StringObject::New(value).As<v8::StringObject>();
+                                     ^
+In file included from /root/.node-gyp/11.15.0/include/node/v8.h:26:0,
+                 from /root/.node-gyp/11.15.0/include/node/node.h:63,
+                 from ../src/batch.cc:1:
+/root/.node-gyp/11.15.0/include/node/v8.h:5242:37: note: declared here
+                 static Local<Value> New(Local<String> value));
+                                     ^
+/root/.node-gyp/11.15.0/include/node/v8config.h:326:3: note: in definition of macro ‘V8_DEPRECATED’
+   declarator __attribute__((deprecated(message)))
+   ^~~~~~~~~~
+In file included from ../src/batch.cc:3:0:
+../../nan/nan.h: In function ‘v8::Local<v8::Value> Nan::MakeCallback(v8::Local<v8::Object>, v8::Local<v8::Function>, int, v8::Local<v8::Value>*)’:
+../../nan/nan.h:817:60: warning: ‘v8::Local<v8::Value> node::MakeCallback(v8::Isolate*, v8::Local<v8::Object>, v8::Local<v8::Function>, int, v8::Local<v8::Value>*)’ is deprecated: Use MakeCallback(..., async_context) [-Wdeprecated-declarations]
+         v8::Isolate::GetCurrent(), target, func, argc, argv);
+                                                            ^
+In file included from ../src/batch.cc:1:0:
+/root/.node-gyp/11.15.0/include/node/node.h:174:50: note: declared here
+                 NODE_EXTERN v8::Local<v8::Value> MakeCallback(
+                                                  ^
+/root/.node-gyp/11.15.0/include/node/node.h:93:42: note: in definition of macro ‘NODE_DEPRECATED’
+     __attribute__((deprecated(message))) declarator
+                                          ^~~~~~~~~~
+In file included from ../src/batch.cc:3:0:
+../../nan/nan.h: In function ‘v8::Local<v8::Value> Nan::MakeCallback(v8::Local<v8::Object>, v8::Local<v8::String>, int, v8::Local<v8::Value>*)’:
+../../nan/nan.h:831:62: warning: ‘v8::Local<v8::Value> node::MakeCallback(v8::Isolate*, v8::Local<v8::Object>, v8::Local<v8::String>, int, v8::Local<v8::Value>*)’ is deprecated: Use MakeCallback(..., async_context) [-Wdeprecated-declarations]
+         v8::Isolate::GetCurrent(), target, symbol, argc, argv);
+                                                              ^
+In file included from ../src/batch.cc:1:0:
+/root/.node-gyp/11.15.0/include/node/node.h:167:50: note: declared here
+                 NODE_EXTERN v8::Local<v8::Value> MakeCallback(
+                                                  ^
+/root/.node-gyp/11.15.0/include/node/node.h:93:42: note: in definition of macro ‘NODE_DEPRECATED’
+     __attribute__((deprecated(message))) declarator
+                                          ^~~~~~~~~~
+In file included from ../src/batch.cc:3:0:
+../../nan/nan.h: In function ‘v8::Local<v8::Value> Nan::MakeCallback(v8::Local<v8::Object>, const char*, int, v8::Local<v8::Value>*)’:
+../../nan/nan.h:845:62: warning: ‘v8::Local<v8::Value> node::MakeCallback(v8::Isolate*, v8::Local<v8::Object>, const char*, int, v8::Local<v8::Value>*)’ is deprecated: Use MakeCallback(..., async_context) [-Wdeprecated-declarations]
+         v8::Isolate::GetCurrent(), target, method, argc, argv);
+                                                              ^
+In file included from ../src/batch.cc:1:0:
+/root/.node-gyp/11.15.0/include/node/node.h:160:50: note: declared here
+                 NODE_EXTERN v8::Local<v8::Value> MakeCallback(
+                                                  ^
+/root/.node-gyp/11.15.0/include/node/node.h:93:42: note: in definition of macro ‘NODE_DEPRECATED’
+     __attribute__((deprecated(message))) declarator
+                                          ^~~~~~~~~~
+In file included from ../src/batch.cc:3:0:
+../../nan/nan.h: In constructor ‘Nan::Utf8String::Utf8String(v8::Local<v8::Value>)’:
+../../nan/nan.h:890:53: warning: ‘v8::Local<v8::String> v8::Value::ToString() const’ is deprecated: Use maybe version [-Wdeprecated-declarations]
+       v8::Local<v8::String> string = from->ToString();
+                                                     ^
+In file included from /root/.node-gyp/11.15.0/include/node/node.h:63:0,
+                 from ../src/batch.cc:1:
+/root/.node-gyp/11.15.0/include/node/v8.h:10251:15: note: declared here
+ Local<String> Value::ToString() const {
+               ^~~~~
+In file included from ../src/batch.cc:3:0:
+../../nan/nan.h:900:74: warning: ‘int v8::String::WriteUtf8(char*, int, int*, int) const’ is deprecated: Use Isolate* version [-Wdeprecated-declarations]
+         length_ = string->WriteUtf8(str_, static_cast<int>(len), 0, flags);
+                                                                          ^
+In file included from /root/.node-gyp/11.15.0/include/node/v8.h:26:0,
+                 from /root/.node-gyp/11.15.0/include/node/node.h:63,
+                 from ../src/batch.cc:1:
+/root/.node-gyp/11.15.0/include/node/v8.h:2754:21: note: declared here
+                 int WriteUtf8(char* buffer, int length = -1,
+                     ^
+/root/.node-gyp/11.15.0/include/node/v8config.h:326:3: note: in definition of macro ‘V8_DEPRECATED’
+   declarator __attribute__((deprecated(message)))
+   ^~~~~~~~~~
+In file included from ../src/batch.cc:3:0:
+../../nan/nan.h: In member function ‘v8::Local<v8::Value> Nan::Callback::Call_(v8::Isolate*, v8::Local<v8::Object>, int, v8::Local<v8::Value>*) const’:
+../../nan/nan.h:1463:5: warning: ‘v8::Local<v8::Value> node::MakeCallback(v8::Isolate*, v8::Local<v8::Object>, v8::Local<v8::Function>, int, v8::Local<v8::Value>*)’ is deprecated: Use MakeCallback(..., async_context) [-Wdeprecated-declarations]
+     ));
+     ^
+In file included from ../src/batch.cc:1:0:
+/root/.node-gyp/11.15.0/include/node/node.h:174:50: note: declared here
+                 NODE_EXTERN v8::Local<v8::Value> MakeCallback(
+                                                  ^
+/root/.node-gyp/11.15.0/include/node/node.h:93:42: note: in definition of macro ‘NODE_DEPRECATED’
+     __attribute__((deprecated(message))) declarator
+                                          ^~~~~~~~~~
+In file included from ../src/database.h:18:0,
+                 from ../src/batch.cc:5:
+../src/leveldown.h: In function ‘size_t StringOrBufferLength(v8::Local<v8::Value>)’:
+../src/leveldown.h:16:26: warning: ‘v8::Local<v8::Object> v8::Value::ToObject() const’ is deprecated: Use maybe version [-Wdeprecated-declarations]
+   return (!obj->ToObject().IsEmpty()
+                          ^
+In file included from /root/.node-gyp/11.15.0/include/node/node.h:63:0,
+                 from ../src/batch.cc:1:
+/root/.node-gyp/11.15.0/include/node/v8.h:10257:15: note: declared here
+ Local<Object> Value::ToObject() const {
+               ^~~~~
+In file included from ../src/database.h:18:0,
+                 from ../src/batch.cc:5:
+../src/leveldown.h:17:48: warning: ‘v8::Local<v8::Object> v8::Value::ToObject() const’ is deprecated: Use maybe version [-Wdeprecated-declarations]
+     && node::Buffer::HasInstance(obj->ToObject()))
+                                                ^
+In file included from /root/.node-gyp/11.15.0/include/node/node.h:63:0,
+                 from ../src/batch.cc:1:
+/root/.node-gyp/11.15.0/include/node/v8.h:10257:15: note: declared here
+ Local<Object> Value::ToObject() const {
+               ^~~~~
+In file included from ../src/database.h:18:0,
+                 from ../src/batch.cc:5:
+../src/leveldown.h:18:42: warning: ‘v8::Local<v8::Object> v8::Value::ToObject() const’ is deprecated: Use maybe version [-Wdeprecated-declarations]
+     ? node::Buffer::Length(obj->ToObject())
+                                          ^
+In file included from /root/.node-gyp/11.15.0/include/node/node.h:63:0,
+                 from ../src/batch.cc:1:
+/root/.node-gyp/11.15.0/include/node/v8.h:10257:15: note: declared here
+ Local<Object> Value::ToObject() const {
+               ^~~~~
+In file included from ../src/database.h:18:0,
+                 from ../src/batch.cc:5:
+../src/leveldown.h:19:21: warning: ‘v8::Local<v8::String> v8::Value::ToString() const’ is deprecated: Use maybe version [-Wdeprecated-declarations]
+     : obj->ToString()->Utf8Length();
+                     ^
+In file included from /root/.node-gyp/11.15.0/include/node/node.h:63:0,
+                 from ../src/batch.cc:1:
+/root/.node-gyp/11.15.0/include/node/v8.h:10251:15: note: declared here
+ Local<String> Value::ToString() const {
+               ^~~~~
+In file included from ../src/database.h:18:0,
+                 from ../src/batch.cc:5:
+../src/leveldown.h:19:35: warning: ‘int v8::String::Utf8Length() const’ is deprecated: Use Isolate version instead [-Wdeprecated-declarations]
+     : obj->ToString()->Utf8Length();
+                                   ^
+In file included from /root/.node-gyp/11.15.0/include/node/v8.h:26:0,
+                 from /root/.node-gyp/11.15.0/include/node/node.h:63,
+                 from ../src/batch.cc:1:
+/root/.node-gyp/11.15.0/include/node/v8.h:2682:52: note: declared here
+   V8_DEPRECATED("Use Isolate version instead", int Utf8Length() const);
+                                                    ^
+/root/.node-gyp/11.15.0/include/node/v8config.h:326:3: note: in definition of macro ‘V8_DEPRECATED’
+   declarator __attribute__((deprecated(message)))
+   ^~~~~~~~~~
+In file included from ../src/batch.cc:8:0:
+../src/common.h: In function ‘bool leveldown::BooleanOptionValue(v8::Local<v8::Object>, const char*, bool)’:
+../src/common.h:20:39: warning: ‘bool v8::Value::BooleanValue() const’ is deprecated: Use maybe version [-Wdeprecated-declarations]
+     ? options->Get(key)->BooleanValue()
+                                       ^
+In file included from /root/.node-gyp/11.15.0/include/node/v8.h:26:0,
+                 from /root/.node-gyp/11.15.0/include/node/node.h:63,
+                 from ../src/batch.cc:1:
+/root/.node-gyp/11.15.0/include/node/v8.h:2568:43: note: declared here
+   V8_DEPRECATED("Use maybe version", bool BooleanValue() const);
+                                           ^
+/root/.node-gyp/11.15.0/include/node/v8config.h:326:3: note: in definition of macro ‘V8_DEPRECATED’
+   declarator __attribute__((deprecated(message)))
+   ^~~~~~~~~~
+In file included from ../src/batch.cc:8:0:
+../src/common.h: In function ‘uint32_t leveldown::UInt32OptionValue(v8::Local<v8::Object>, const char*, uint32_t)’:
+../src/common.h:32:38: warning: ‘uint32_t v8::Value::Uint32Value() const’ is deprecated: Use maybe version [-Wdeprecated-declarations]
+     ? options->Get(key)->Uint32Value()
+                                      ^
+In file included from /root/.node-gyp/11.15.0/include/node/v8.h:26:0,
+                 from /root/.node-gyp/11.15.0/include/node/node.h:63,
+                 from ../src/batch.cc:1:
+/root/.node-gyp/11.15.0/include/node/v8.h:2571:47: note: declared here
+   V8_DEPRECATED("Use maybe version", uint32_t Uint32Value() const);
+                                               ^
+/root/.node-gyp/11.15.0/include/node/v8config.h:326:3: note: in definition of macro ‘V8_DEPRECATED’
+   declarator __attribute__((deprecated(message)))
+   ^~~~~~~~~~
+../src/batch.cc: In static member function ‘static Nan::NAN_METHOD_RETURN_TYPE leveldown::Batch::New(Nan::NAN_METHOD_ARGS_TYPE)’:
+../src/batch.cc:42:76: warning: ‘v8::Local<v8::Object> v8::Value::ToObject() const’ is deprecated: Use maybe version [-Wdeprecated-declarations]
+   Database* database = Nan::ObjectWrap::Unwrap<Database>(info[0]->ToObject());
+                                                                            ^
+In file included from /root/.node-gyp/11.15.0/include/node/node.h:63:0,
+                 from ../src/batch.cc:1:
+/root/.node-gyp/11.15.0/include/node/v8.h:10257:15: note: declared here
+ Local<Object> Value::ToObject() const {
+               ^~~~~
+../src/batch.cc: In static member function ‘static v8::Local<v8::Value> leveldown::Batch::NewInstance(v8::Local<v8::Object>, v8::Local<v8::Object>)’:
+../src/batch.cc:71:69: error: no matching function for call to ‘v8::Function::NewInstance(int, v8::Local<v8::Value> [1])’
+     instance = constructorHandle->GetFunction()->NewInstance(1, argv);
+                                                                     ^
+In file included from /root/.node-gyp/11.15.0/include/node/node.h:63:0,
+                 from ../src/batch.cc:1:
+/root/.node-gyp/11.15.0/include/node/v8.h:4105:44: note: candidate: v8::MaybeLocal<v8::Object> v8::Function::NewInstance(v8::Local<v8::Context>, int, v8::Local<v8::Value>*) const
+   V8_WARN_UNUSED_RESULT MaybeLocal<Object> NewInstance(
+                                            ^~~~~~~~~~~
+/root/.node-gyp/11.15.0/include/node/v8.h:4105:44: note:   candidate expects 3 arguments, 2 provided
+/root/.node-gyp/11.15.0/include/node/v8.h:4108:44: note: candidate: v8::MaybeLocal<v8::Object> v8::Function::NewInstance(v8::Local<v8::Context>) const
+   V8_WARN_UNUSED_RESULT MaybeLocal<Object> NewInstance(
+                                            ^~~~~~~~~~~
+/root/.node-gyp/11.15.0/include/node/v8.h:4108:44: note:   candidate expects 1 argument, 2 provided
+../src/batch.cc:74:69: error: no matching function for call to ‘v8::Function::NewInstance(int, v8::Local<v8::Value> [2])’
+     instance = constructorHandle->GetFunction()->NewInstance(2, argv);
+                                                                     ^
+In file included from /root/.node-gyp/11.15.0/include/node/node.h:63:0,
+                 from ../src/batch.cc:1:
+/root/.node-gyp/11.15.0/include/node/v8.h:4105:44: note: candidate: v8::MaybeLocal<v8::Object> v8::Function::NewInstance(v8::Local<v8::Context>, int, v8::Local<v8::Value>*) const
+   V8_WARN_UNUSED_RESULT MaybeLocal<Object> NewInstance(
+                                            ^~~~~~~~~~~
+/root/.node-gyp/11.15.0/include/node/v8.h:4105:44: note:   candidate expects 3 arguments, 2 provided
+/root/.node-gyp/11.15.0/include/node/v8.h:4108:44: note: candidate: v8::MaybeLocal<v8::Object> v8::Function::NewInstance(v8::Local<v8::Context>) const
+   V8_WARN_UNUSED_RESULT MaybeLocal<Object> NewInstance(
+                                            ^~~~~~~~~~~
+/root/.node-gyp/11.15.0/include/node/v8.h:4108:44: note:   candidate expects 1 argument, 2 provided
+In file included from ../src/database.h:18:0,
+                 from ../src/batch.cc:5:
+../src/batch.cc: In static member function ‘static Nan::NAN_METHOD_RETURN_TYPE leveldown::Batch::Put(Nan::NAN_METHOD_ARGS_TYPE)’:
+../src/leveldown.h:53:30: warning: ‘v8::Local<v8::Object> v8::Value::ToObject() const’ is deprecated: Use maybe version [-Wdeprecated-declarations]
+   } else if (!from->ToObject().IsEmpty()                                       \
+                              ^
+../src/batch.cc:86:3: note: in expansion of macro ‘LD_STRING_OR_BUFFER_TO_SLICE’
+   LD_STRING_OR_BUFFER_TO_SLICE(key, keyBuffer, key)
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /root/.node-gyp/11.15.0/include/node/node.h:63:0,
+                 from ../src/batch.cc:1:
+/root/.node-gyp/11.15.0/include/node/v8.h:10257:15: note: declared here
+ Local<Object> Value::ToObject() const {
+               ^~~~~
+In file included from ../src/database.h:18:0,
+                 from ../src/batch.cc:5:
+../src/leveldown.h:54:51: warning: ‘v8::Local<v8::Object> v8::Value::ToObject() const’ is deprecated: Use maybe version [-Wdeprecated-declarations]
+       && node::Buffer::HasInstance(from->ToObject())) {                        \
+                                                   ^
+../src/batch.cc:86:3: note: in expansion of macro ‘LD_STRING_OR_BUFFER_TO_SLICE’
+   LD_STRING_OR_BUFFER_TO_SLICE(key, keyBuffer, key)
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /root/.node-gyp/11.15.0/include/node/node.h:63:0,
+                 from ../src/batch.cc:1:
+/root/.node-gyp/11.15.0/include/node/v8.h:10257:15: note: declared here
+ Local<Object> Value::ToObject() const {
+               ^~~~~
+In file included from ../src/database.h:18:0,
+                 from ../src/batch.cc:5:
+../src/leveldown.h:55:53: warning: ‘v8::Local<v8::Object> v8::Value::ToObject() const’ is deprecated: Use maybe version [-Wdeprecated-declarations]
+     to ## Sz_ = node::Buffer::Length(from->ToObject());                        \
+                                                     ^
+../src/batch.cc:86:3: note: in expansion of macro ‘LD_STRING_OR_BUFFER_TO_SLICE’
+   LD_STRING_OR_BUFFER_TO_SLICE(key, keyBuffer, key)
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /root/.node-gyp/11.15.0/include/node/node.h:63:0,
+                 from ../src/batch.cc:1:
+/root/.node-gyp/11.15.0/include/node/v8.h:10257:15: note: declared here
+ Local<Object> Value::ToObject() const {
+               ^~~~~
+In file included from ../src/database.h:18:0,
+                 from ../src/batch.cc:5:
+../src/leveldown.h:56:51: warning: ‘v8::Local<v8::Object> v8::Value::ToObject() const’ is deprecated: Use maybe version [-Wdeprecated-declarations]
+     to ## Ch_ = node::Buffer::Data(from->ToObject());                          \
+                                                   ^
+../src/batch.cc:86:3: note: in expansion of macro ‘LD_STRING_OR_BUFFER_TO_SLICE’
+   LD_STRING_OR_BUFFER_TO_SLICE(key, keyBuffer, key)
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /root/.node-gyp/11.15.0/include/node/node.h:63:0,
+                 from ../src/batch.cc:1:
+/root/.node-gyp/11.15.0/include/node/v8.h:10257:15: note: declared here
+ Local<Object> Value::ToObject() const {
+               ^~~~~
+In file included from ../src/database.h:18:0,
+                 from ../src/batch.cc:5:
+../src/leveldown.h:58:54: warning: ‘v8::Local<v8::String> v8::Value::ToString() const’ is deprecated: Use maybe version [-Wdeprecated-declarations]
+     v8::Local<v8::String> to ## Str = from->ToString();                        \
+                                                      ^
+../src/batch.cc:86:3: note: in expansion of macro ‘LD_STRING_OR_BUFFER_TO_SLICE’
+   LD_STRING_OR_BUFFER_TO_SLICE(key, keyBuffer, key)
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /root/.node-gyp/11.15.0/include/node/node.h:63:0,
+                 from ../src/batch.cc:1:
+/root/.node-gyp/11.15.0/include/node/v8.h:10251:15: note: declared here
+ Local<String> Value::ToString() const {
+               ^~~~~
+In file included from ../src/database.h:18:0,
+                 from ../src/batch.cc:5:
+../src/leveldown.h:59:39: warning: ‘int v8::String::Utf8Length() const’ is deprecated: Use Isolate version instead [-Wdeprecated-declarations]
+     to ## Sz_ = to ## Str->Utf8Length();                                       \
+                                       ^
+../src/batch.cc:86:3: note: in expansion of macro ‘LD_STRING_OR_BUFFER_TO_SLICE’
+   LD_STRING_OR_BUFFER_TO_SLICE(key, keyBuffer, key)
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /root/.node-gyp/11.15.0/include/node/v8.h:26:0,
+                 from /root/.node-gyp/11.15.0/include/node/node.h:63,
+                 from ../src/batch.cc:1:
+/root/.node-gyp/11.15.0/include/node/v8.h:2682:52: note: declared here
+   V8_DEPRECATED("Use Isolate version instead", int Utf8Length() const);
+                                                    ^
+/root/.node-gyp/11.15.0/include/node/v8config.h:326:3: note: in definition of macro ‘V8_DEPRECATED’
+   declarator __attribute__((deprecated(message)))
+   ^~~~~~~~~~
+In file included from ../src/database.h:18:0,
+                 from ../src/batch.cc:5:
+../src/leveldown.h:65:5: warning: ‘int v8::String::WriteUtf8(char*, int, int*, int) const’ is deprecated: Use Isolate* version [-Wdeprecated-declarations]
+     );                                                                         \
+     ^
+../src/batch.cc:86:3: note: in expansion of macro ‘LD_STRING_OR_BUFFER_TO_SLICE’
+   LD_STRING_OR_BUFFER_TO_SLICE(key, keyBuffer, key)
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /root/.node-gyp/11.15.0/include/node/v8.h:26:0,
+                 from /root/.node-gyp/11.15.0/include/node/node.h:63,
+                 from ../src/batch.cc:1:
+/root/.node-gyp/11.15.0/include/node/v8.h:2754:21: note: declared here
+                 int WriteUtf8(char* buffer, int length = -1,
+                     ^
+/root/.node-gyp/11.15.0/include/node/v8config.h:326:3: note: in definition of macro ‘V8_DEPRECATED’
+   declarator __attribute__((deprecated(message)))
+   ^~~~~~~~~~
+In file included from ../src/database.h:18:0,
+                 from ../src/batch.cc:5:
+../src/leveldown.h:53:30: warning: ‘v8::Local<v8::Object> v8::Value::ToObject() const’ is deprecated: Use maybe version [-Wdeprecated-declarations]
+   } else if (!from->ToObject().IsEmpty()                                       \
+                              ^
+../src/batch.cc:87:3: note: in expansion of macro ‘LD_STRING_OR_BUFFER_TO_SLICE’
+   LD_STRING_OR_BUFFER_TO_SLICE(value, valueBuffer, value)
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /root/.node-gyp/11.15.0/include/node/node.h:63:0,
+                 from ../src/batch.cc:1:
+/root/.node-gyp/11.15.0/include/node/v8.h:10257:15: note: declared here
+ Local<Object> Value::ToObject() const {
+               ^~~~~
+In file included from ../src/database.h:18:0,
+                 from ../src/batch.cc:5:
+../src/leveldown.h:54:51: warning: ‘v8::Local<v8::Object> v8::Value::ToObject() const’ is deprecated: Use maybe version [-Wdeprecated-declarations]
+       && node::Buffer::HasInstance(from->ToObject())) {                        \
+                                                   ^
+../src/batch.cc:87:3: note: in expansion of macro ‘LD_STRING_OR_BUFFER_TO_SLICE’
+   LD_STRING_OR_BUFFER_TO_SLICE(value, valueBuffer, value)
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /root/.node-gyp/11.15.0/include/node/node.h:63:0,
+                 from ../src/batch.cc:1:
+/root/.node-gyp/11.15.0/include/node/v8.h:10257:15: note: declared here
+ Local<Object> Value::ToObject() const {
+               ^~~~~
+In file included from ../src/database.h:18:0,
+                 from ../src/batch.cc:5:
+../src/leveldown.h:55:53: warning: ‘v8::Local<v8::Object> v8::Value::ToObject() const’ is deprecated: Use maybe version [-Wdeprecated-declarations]
+     to ## Sz_ = node::Buffer::Length(from->ToObject());                        \
+                                                     ^
+../src/batch.cc:87:3: note: in expansion of macro ‘LD_STRING_OR_BUFFER_TO_SLICE’
+   LD_STRING_OR_BUFFER_TO_SLICE(value, valueBuffer, value)
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /root/.node-gyp/11.15.0/include/node/node.h:63:0,
+                 from ../src/batch.cc:1:
+/root/.node-gyp/11.15.0/include/node/v8.h:10257:15: note: declared here
+ Local<Object> Value::ToObject() const {
+               ^~~~~
+In file included from ../src/database.h:18:0,
+                 from ../src/batch.cc:5:
+../src/leveldown.h:56:51: warning: ‘v8::Local<v8::Object> v8::Value::ToObject() const’ is deprecated: Use maybe version [-Wdeprecated-declarations]
+     to ## Ch_ = node::Buffer::Data(from->ToObject());                          \
+                                                   ^
+../src/batch.cc:87:3: note: in expansion of macro ‘LD_STRING_OR_BUFFER_TO_SLICE’
+   LD_STRING_OR_BUFFER_TO_SLICE(value, valueBuffer, value)
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /root/.node-gyp/11.15.0/include/node/node.h:63:0,
+                 from ../src/batch.cc:1:
+/root/.node-gyp/11.15.0/include/node/v8.h:10257:15: note: declared here
+ Local<Object> Value::ToObject() const {
+               ^~~~~
+In file included from ../src/database.h:18:0,
+                 from ../src/batch.cc:5:
+../src/leveldown.h:58:54: warning: ‘v8::Local<v8::String> v8::Value::ToString() const’ is deprecated: Use maybe version [-Wdeprecated-declarations]
+     v8::Local<v8::String> to ## Str = from->ToString();                        \
+                                                      ^
+../src/batch.cc:87:3: note: in expansion of macro ‘LD_STRING_OR_BUFFER_TO_SLICE’
+   LD_STRING_OR_BUFFER_TO_SLICE(value, valueBuffer, value)
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /root/.node-gyp/11.15.0/include/node/node.h:63:0,
+                 from ../src/batch.cc:1:
+/root/.node-gyp/11.15.0/include/node/v8.h:10251:15: note: declared here
+ Local<String> Value::ToString() const {
+               ^~~~~
+In file included from ../src/database.h:18:0,
+                 from ../src/batch.cc:5:
+../src/leveldown.h:59:39: warning: ‘int v8::String::Utf8Length() const’ is deprecated: Use Isolate version instead [-Wdeprecated-declarations]
+     to ## Sz_ = to ## Str->Utf8Length();                                       \
+                                       ^
+../src/batch.cc:87:3: note: in expansion of macro ‘LD_STRING_OR_BUFFER_TO_SLICE’
+   LD_STRING_OR_BUFFER_TO_SLICE(value, valueBuffer, value)
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /root/.node-gyp/11.15.0/include/node/v8.h:26:0,
+                 from /root/.node-gyp/11.15.0/include/node/node.h:63,
+                 from ../src/batch.cc:1:
+/root/.node-gyp/11.15.0/include/node/v8.h:2682:52: note: declared here
+   V8_DEPRECATED("Use Isolate version instead", int Utf8Length() const);
+                                                    ^
+/root/.node-gyp/11.15.0/include/node/v8config.h:326:3: note: in definition of macro ‘V8_DEPRECATED’
+   declarator __attribute__((deprecated(message)))
+   ^~~~~~~~~~
+In file included from ../src/database.h:18:0,
+                 from ../src/batch.cc:5:
+../src/leveldown.h:65:5: warning: ‘int v8::String::WriteUtf8(char*, int, int*, int) const’ is deprecated: Use Isolate* version [-Wdeprecated-declarations]
+     );                                                                         \
+     ^
+../src/batch.cc:87:3: note: in expansion of macro ‘LD_STRING_OR_BUFFER_TO_SLICE’
+   LD_STRING_OR_BUFFER_TO_SLICE(value, valueBuffer, value)
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /root/.node-gyp/11.15.0/include/node/v8.h:26:0,
+                 from /root/.node-gyp/11.15.0/include/node/node.h:63,
+                 from ../src/batch.cc:1:
+/root/.node-gyp/11.15.0/include/node/v8.h:2754:21: note: declared here
+                 int WriteUtf8(char* buffer, int length = -1,
+                     ^
+/root/.node-gyp/11.15.0/include/node/v8config.h:326:3: note: in definition of macro ‘V8_DEPRECATED’
+   declarator __attribute__((deprecated(message)))
+   ^~~~~~~~~~
+In file included from ../src/database.h:18:0,
+                 from ../src/batch.cc:5:
+../src/batch.cc: In static member function ‘static Nan::NAN_METHOD_RETURN_TYPE leveldown::Batch::Del(Nan::NAN_METHOD_ARGS_TYPE)’:
+../src/leveldown.h:53:30: warning: ‘v8::Local<v8::Object> v8::Value::ToObject() const’ is deprecated: Use maybe version [-Wdeprecated-declarations]
+   } else if (!from->ToObject().IsEmpty()                                       \
+                              ^
+../src/batch.cc:105:3: note: in expansion of macro ‘LD_STRING_OR_BUFFER_TO_SLICE’
+   LD_STRING_OR_BUFFER_TO_SLICE(key, keyBuffer, key)
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /root/.node-gyp/11.15.0/include/node/node.h:63:0,
+                 from ../src/batch.cc:1:
+/root/.node-gyp/11.15.0/include/node/v8.h:10257:15: note: declared here
+ Local<Object> Value::ToObject() const {
+               ^~~~~
+In file included from ../src/database.h:18:0,
+                 from ../src/batch.cc:5:
+../src/leveldown.h:54:51: warning: ‘v8::Local<v8::Object> v8::Value::ToObject() const’ is deprecated: Use maybe version [-Wdeprecated-declarations]
+       && node::Buffer::HasInstance(from->ToObject())) {                        \
+                                                   ^
+../src/batch.cc:105:3: note: in expansion of macro ‘LD_STRING_OR_BUFFER_TO_SLICE’
+   LD_STRING_OR_BUFFER_TO_SLICE(key, keyBuffer, key)
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /root/.node-gyp/11.15.0/include/node/node.h:63:0,
+                 from ../src/batch.cc:1:
+/root/.node-gyp/11.15.0/include/node/v8.h:10257:15: note: declared here
+ Local<Object> Value::ToObject() const {
+               ^~~~~
+In file included from ../src/database.h:18:0,
+                 from ../src/batch.cc:5:
+../src/leveldown.h:55:53: warning: ‘v8::Local<v8::Object> v8::Value::ToObject() const’ is deprecated: Use maybe version [-Wdeprecated-declarations]
+     to ## Sz_ = node::Buffer::Length(from->ToObject());                        \
+                                                     ^
+../src/batch.cc:105:3: note: in expansion of macro ‘LD_STRING_OR_BUFFER_TO_SLICE’
+   LD_STRING_OR_BUFFER_TO_SLICE(key, keyBuffer, key)
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /root/.node-gyp/11.15.0/include/node/node.h:63:0,
+                 from ../src/batch.cc:1:
+/root/.node-gyp/11.15.0/include/node/v8.h:10257:15: note: declared here
+ Local<Object> Value::ToObject() const {
+               ^~~~~
+In file included from ../src/database.h:18:0,
+                 from ../src/batch.cc:5:
+../src/leveldown.h:56:51: warning: ‘v8::Local<v8::Object> v8::Value::ToObject() const’ is deprecated: Use maybe version [-Wdeprecated-declarations]
+     to ## Ch_ = node::Buffer::Data(from->ToObject());                          \
+                                                   ^
+../src/batch.cc:105:3: note: in expansion of macro ‘LD_STRING_OR_BUFFER_TO_SLICE’
+   LD_STRING_OR_BUFFER_TO_SLICE(key, keyBuffer, key)
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /root/.node-gyp/11.15.0/include/node/node.h:63:0,
+                 from ../src/batch.cc:1:
+/root/.node-gyp/11.15.0/include/node/v8.h:10257:15: note: declared here
+ Local<Object> Value::ToObject() const {
+               ^~~~~
+In file included from ../src/database.h:18:0,
+                 from ../src/batch.cc:5:
+../src/leveldown.h:58:54: warning: ‘v8::Local<v8::String> v8::Value::ToString() const’ is deprecated: Use maybe version [-Wdeprecated-declarations]
+     v8::Local<v8::String> to ## Str = from->ToString();                        \
+                                                      ^
+../src/batch.cc:105:3: note: in expansion of macro ‘LD_STRING_OR_BUFFER_TO_SLICE’
+   LD_STRING_OR_BUFFER_TO_SLICE(key, keyBuffer, key)
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /root/.node-gyp/11.15.0/include/node/node.h:63:0,
+                 from ../src/batch.cc:1:
+/root/.node-gyp/11.15.0/include/node/v8.h:10251:15: note: declared here
+ Local<String> Value::ToString() const {
+               ^~~~~
+In file included from ../src/database.h:18:0,
+                 from ../src/batch.cc:5:
+../src/leveldown.h:59:39: warning: ‘int v8::String::Utf8Length() const’ is deprecated: Use Isolate version instead [-Wdeprecated-declarations]
+     to ## Sz_ = to ## Str->Utf8Length();                                       \
+                                       ^
+../src/batch.cc:105:3: note: in expansion of macro ‘LD_STRING_OR_BUFFER_TO_SLICE’
+   LD_STRING_OR_BUFFER_TO_SLICE(key, keyBuffer, key)
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /root/.node-gyp/11.15.0/include/node/v8.h:26:0,
+                 from /root/.node-gyp/11.15.0/include/node/node.h:63,
+                 from ../src/batch.cc:1:
+/root/.node-gyp/11.15.0/include/node/v8.h:2682:52: note: declared here
+   V8_DEPRECATED("Use Isolate version instead", int Utf8Length() const);
+                                                    ^
+/root/.node-gyp/11.15.0/include/node/v8config.h:326:3: note: in definition of macro ‘V8_DEPRECATED’
+   declarator __attribute__((deprecated(message)))
+   ^~~~~~~~~~
+In file included from ../src/database.h:18:0,
+                 from ../src/batch.cc:5:
+../src/leveldown.h:65:5: warning: ‘int v8::String::WriteUtf8(char*, int, int*, int) const’ is deprecated: Use Isolate* version [-Wdeprecated-declarations]
+     );                                                                         \
+     ^
+../src/batch.cc:105:3: note: in expansion of macro ‘LD_STRING_OR_BUFFER_TO_SLICE’
+   LD_STRING_OR_BUFFER_TO_SLICE(key, keyBuffer, key)
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /root/.node-gyp/11.15.0/include/node/v8.h:26:0,
+                 from /root/.node-gyp/11.15.0/include/node/node.h:63,
+                 from ../src/batch.cc:1:
+/root/.node-gyp/11.15.0/include/node/v8.h:2754:21: note: declared here
+                 int WriteUtf8(char* buffer, int length = -1,
+                     ^
+/root/.node-gyp/11.15.0/include/node/v8config.h:326:3: note: in definition of macro ‘V8_DEPRECATED’
+   declarator __attribute__((deprecated(message)))
+   ^~~~~~~~~~
+leveldown.target.mk:113: recipe for target 'Release/obj.target/leveldown/src/batch.o' failed
+make: *** [Release/obj.target/leveldown/src/batch.o] Error 1
+make: Leaving directory '/home/workspace/webservice/server/node_modules/leveldown/build'
+prebuild ERR! build error 
+prebuild ERR! stack Error: `make` failed with exit code: 2
+prebuild ERR! stack     at ChildProcess.onExit (/home/workspace/webservice/server/node_modules/node-gyp/lib/build.js:276:23)
+prebuild ERR! stack     at ChildProcess.emit (events.js:193:13)
+prebuild ERR! stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:255:12)
+prebuild ERR! not ok 
+prebuild ERR! build Error: `make` failed with exit code: 2
+prebuild ERR! build     at ChildProcess.onExit (/home/workspace/webservice/server/node_modules/node-gyp/lib/build.js:276:23)
+prebuild ERR! build     at ChildProcess.emit (events.js:193:13)
+prebuild ERR! build     at Process.ChildProcess._handle.onexit (internal/child_process.js:255:12)
+
+> snappy@5.0.5 install /home/workspace/webservice/server/node_modules/snappy
+> node-gyp rebuild
+
+make: Entering directory '/home/workspace/webservice/server/node_modules/snappy/build'
+  CXX(target) Release/obj.target/snappy/deps/snappy/snappy-1.1.2/snappy-sinksource.o
+  CXX(target) Release/obj.target/snappy/deps/snappy/snappy-1.1.2/snappy-stubs-internal.o
+  CXX(target) Release/obj.target/snappy/deps/snappy/snappy-1.1.2/snappy.o
+  AR(target) Release/obj.target/deps/snappy/snappy.a
+  COPY Release/snappy.a
+  CXX(target) Release/obj.target/binding/src/binding.o
+In file included from ../../nan/nan.h:190:0,
+                 from ../src/./binding.h:6,
+                 from ../src/binding.cc:1:
+../../nan/nan_maybe_43_inl.h: In function ‘Nan::Maybe<bool> Nan::ForceSet(v8::Local<v8::Object>, v8::Local<v8::Value>, v8::Local<v8::Value>, v8::PropertyAttribute)’:
+../../nan/nan_maybe_43_inl.h:88:15: error: ‘class v8::Object’ has no member named ‘ForceSet’
+   return obj->ForceSet(GetCurrentContext(), key, value, attribs);
+               ^~~~~~~~
+In file included from ../../nan/nan_new.h:189:0,
+                 from ../../nan/nan.h:196,
+                 from ../src/./binding.h:6,
+                 from ../src/binding.cc:1:
+../../nan/nan_implementation_12_inl.h: In static member function ‘static Nan::imp::FactoryBase<v8::StringObject>::return_t Nan::imp::Factory<v8::StringObject>::New(v8::Local<v8::String>)’:
+../../nan/nan_implementation_12_inl.h:345:37: warning: ‘static v8::Local<v8::Value> v8::StringObject::New(v8::Local<v8::String>)’ is deprecated: Use Isolate* version [-Wdeprecated-declarations]
+   return v8::StringObject::New(value).As<v8::StringObject>();
+                                     ^
+In file included from /root/.node-gyp/11.15.0/include/node/v8.h:26:0,
+                 from /root/.node-gyp/11.15.0/include/node/node.h:63,
+                 from ../src/./binding.h:3,
+                 from ../src/binding.cc:1:
+/root/.node-gyp/11.15.0/include/node/v8.h:5242:37: note: declared here
+                 static Local<Value> New(Local<String> value));
+                                     ^
+/root/.node-gyp/11.15.0/include/node/v8config.h:326:3: note: in definition of macro ‘V8_DEPRECATED’
+   declarator __attribute__((deprecated(message)))
+   ^~~~~~~~~~
+In file included from ../src/./binding.h:6:0,
+                 from ../src/binding.cc:1:
+../../nan/nan.h: In function ‘v8::Local<v8::Value> Nan::MakeCallback(v8::Local<v8::Object>, v8::Local<v8::Function>, int, v8::Local<v8::Value>*)’:
+../../nan/nan.h:817:60: warning: ‘v8::Local<v8::Value> node::MakeCallback(v8::Isolate*, v8::Local<v8::Object>, v8::Local<v8::Function>, int, v8::Local<v8::Value>*)’ is deprecated: Use MakeCallback(..., async_context) [-Wdeprecated-declarations]
+         v8::Isolate::GetCurrent(), target, func, argc, argv);
+                                                            ^
+In file included from ../src/./binding.h:3:0,
+                 from ../src/binding.cc:1:
+/root/.node-gyp/11.15.0/include/node/node.h:174:50: note: declared here
+                 NODE_EXTERN v8::Local<v8::Value> MakeCallback(
+                                                  ^
+/root/.node-gyp/11.15.0/include/node/node.h:93:42: note: in definition of macro ‘NODE_DEPRECATED’
+     __attribute__((deprecated(message))) declarator
+                                          ^~~~~~~~~~
+In file included from ../src/./binding.h:6:0,
+                 from ../src/binding.cc:1:
+../../nan/nan.h: In function ‘v8::Local<v8::Value> Nan::MakeCallback(v8::Local<v8::Object>, v8::Local<v8::String>, int, v8::Local<v8::Value>*)’:
+../../nan/nan.h:831:62: warning: ‘v8::Local<v8::Value> node::MakeCallback(v8::Isolate*, v8::Local<v8::Object>, v8::Local<v8::String>, int, v8::Local<v8::Value>*)’ is deprecated: Use MakeCallback(..., async_context) [-Wdeprecated-declarations]
+         v8::Isolate::GetCurrent(), target, symbol, argc, argv);
+                                                              ^
+In file included from ../src/./binding.h:3:0,
+                 from ../src/binding.cc:1:
+/root/.node-gyp/11.15.0/include/node/node.h:167:50: note: declared here
+                 NODE_EXTERN v8::Local<v8::Value> MakeCallback(
+                                                  ^
+/root/.node-gyp/11.15.0/include/node/node.h:93:42: note: in definition of macro ‘NODE_DEPRECATED’
+     __attribute__((deprecated(message))) declarator
+                                          ^~~~~~~~~~
+In file included from ../src/./binding.h:6:0,
+                 from ../src/binding.cc:1:
+../../nan/nan.h: In function ‘v8::Local<v8::Value> Nan::MakeCallback(v8::Local<v8::Object>, const char*, int, v8::Local<v8::Value>*)’:
+../../nan/nan.h:845:62: warning: ‘v8::Local<v8::Value> node::MakeCallback(v8::Isolate*, v8::Local<v8::Object>, const char*, int, v8::Local<v8::Value>*)’ is deprecated: Use MakeCallback(..., async_context) [-Wdeprecated-declarations]
+         v8::Isolate::GetCurrent(), target, method, argc, argv);
+                                                              ^
+In file included from ../src/./binding.h:3:0,
+                 from ../src/binding.cc:1:
+/root/.node-gyp/11.15.0/include/node/node.h:160:50: note: declared here
+                 NODE_EXTERN v8::Local<v8::Value> MakeCallback(
+                                                  ^
+/root/.node-gyp/11.15.0/include/node/node.h:93:42: note: in definition of macro ‘NODE_DEPRECATED’
+     __attribute__((deprecated(message))) declarator
+                                          ^~~~~~~~~~
+In file included from ../src/./binding.h:6:0,
+                 from ../src/binding.cc:1:
+../../nan/nan.h: In constructor ‘Nan::Utf8String::Utf8String(v8::Local<v8::Value>)’:
+../../nan/nan.h:890:53: warning: ‘v8::Local<v8::String> v8::Value::ToString() const’ is deprecated: Use maybe version [-Wdeprecated-declarations]
+       v8::Local<v8::String> string = from->ToString();
+                                                     ^
+In file included from /root/.node-gyp/11.15.0/include/node/node.h:63:0,
+                 from ../src/./binding.h:3,
+                 from ../src/binding.cc:1:
+/root/.node-gyp/11.15.0/include/node/v8.h:10251:15: note: declared here
+ Local<String> Value::ToString() const {
+               ^~~~~
+In file included from ../src/./binding.h:6:0,
+                 from ../src/binding.cc:1:
+../../nan/nan.h:900:74: warning: ‘int v8::String::WriteUtf8(char*, int, int*, int) const’ is deprecated: Use Isolate* version [-Wdeprecated-declarations]
+         length_ = string->WriteUtf8(str_, static_cast<int>(len), 0, flags);
+                                                                          ^
+In file included from /root/.node-gyp/11.15.0/include/node/v8.h:26:0,
+                 from /root/.node-gyp/11.15.0/include/node/node.h:63,
+                 from ../src/./binding.h:3,
+                 from ../src/binding.cc:1:
+/root/.node-gyp/11.15.0/include/node/v8.h:2754:21: note: declared here
+                 int WriteUtf8(char* buffer, int length = -1,
+                     ^
+/root/.node-gyp/11.15.0/include/node/v8config.h:326:3: note: in definition of macro ‘V8_DEPRECATED’
+   declarator __attribute__((deprecated(message)))
+   ^~~~~~~~~~
+In file included from ../src/./binding.h:6:0,
+                 from ../src/binding.cc:1:
+../../nan/nan.h: In member function ‘v8::Local<v8::Value> Nan::Callback::Call_(v8::Isolate*, v8::Local<v8::Object>, int, v8::Local<v8::Value>*) const’:
+../../nan/nan.h:1463:5: warning: ‘v8::Local<v8::Value> node::MakeCallback(v8::Isolate*, v8::Local<v8::Object>, v8::Local<v8::Function>, int, v8::Local<v8::Value>*)’ is deprecated: Use MakeCallback(..., async_context) [-Wdeprecated-declarations]
+     ));
+     ^
+In file included from ../src/./binding.h:3:0,
+                 from ../src/binding.cc:1:
+/root/.node-gyp/11.15.0/include/node/node.h:174:50: note: declared here
+                 NODE_EXTERN v8::Local<v8::Value> MakeCallback(
+                                                  ^
+/root/.node-gyp/11.15.0/include/node/node.h:93:42: note: in definition of macro ‘NODE_DEPRECATED’
+     __attribute__((deprecated(message))) declarator
+                                          ^~~~~~~~~~
+../src/binding.cc: In function ‘Nan::NAN_METHOD_RETURN_TYPE nodesnappy::Compress(Nan::NAN_METHOD_ARGS_TYPE)’:
+../src/binding.cc:115:51: warning: ‘v8::Local<v8::Object> v8::Value::ToObject() const’ is deprecated: Use maybe version [-Wdeprecated-declarations]
+   if (node::Buffer::HasInstance(info[0]->ToObject())) {
+                                                   ^
+In file included from /root/.node-gyp/11.15.0/include/node/node.h:63:0,
+                 from ../src/./binding.h:3,
+                 from ../src/binding.cc:1:
+/root/.node-gyp/11.15.0/include/node/v8.h:10257:15: note: declared here
+ Local<Object> Value::ToObject() const {
+               ^~~~~
+../src/binding.cc:116:54: warning: ‘v8::Local<v8::Object> v8::Value::ToObject() const’ is deprecated: Use maybe version [-Wdeprecated-declarations]
+     v8::Local<v8::Object> object = info[0]->ToObject();
+                                                      ^
+In file included from /root/.node-gyp/11.15.0/include/node/node.h:63:0,
+                 from ../src/./binding.h:3,
+                 from ../src/binding.cc:1:
+/root/.node-gyp/11.15.0/include/node/v8.h:10257:15: note: declared here
+ Local<Object> Value::ToObject() const {
+               ^~~~~
+../src/binding.cc:121:52: warning: ‘v8::Local<v8::String> v8::Value::ToString() const’ is deprecated: Use maybe version [-Wdeprecated-declarations]
+     v8::String::Utf8Value param1(info[0]->ToString());
+                                                    ^
+In file included from /root/.node-gyp/11.15.0/include/node/node.h:63:0,
+                 from ../src/./binding.h:3,
+                 from ../src/binding.cc:1:
+/root/.node-gyp/11.15.0/include/node/v8.h:10251:15: note: declared here
+ Local<String> Value::ToString() const {
+               ^~~~~
+../src/binding.cc:121:53: warning: ‘v8::String::Utf8Value::Utf8Value(v8::Local<v8::Value>)’ is deprecated: Use Isolate version [-Wdeprecated-declarations]
+     v8::String::Utf8Value param1(info[0]->ToString());
+                                                     ^
+In file included from /root/.node-gyp/11.15.0/include/node/v8.h:26:0,
+                 from /root/.node-gyp/11.15.0/include/node/node.h:63,
+                 from ../src/./binding.h:3,
+                 from ../src/binding.cc:1:
+/root/.node-gyp/11.15.0/include/node/v8.h:2992:28: note: declared here
+                   explicit Utf8Value(Local<v8::Value> obj));
+                            ^
+/root/.node-gyp/11.15.0/include/node/v8config.h:326:3: note: in definition of macro ‘V8_DEPRECATED’
+   declarator __attribute__((deprecated(message)))
+   ^~~~~~~~~~
+../src/binding.cc: In function ‘Nan::NAN_METHOD_RETURN_TYPE nodesnappy::CompressSync(Nan::NAN_METHOD_ARGS_TYPE)’:
+../src/binding.cc:142:51: warning: ‘v8::Local<v8::Object> v8::Value::ToObject() const’ is deprecated: Use maybe version [-Wdeprecated-declarations]
+   if (node::Buffer::HasInstance(info[0]->ToObject())) {
+                                                   ^
+In file included from /root/.node-gyp/11.15.0/include/node/node.h:63:0,
+                 from ../src/./binding.h:3,
+                 from ../src/binding.cc:1:
+/root/.node-gyp/11.15.0/include/node/v8.h:10257:15: note: declared here
+ Local<Object> Value::ToObject() const {
+               ^~~~~
+../src/binding.cc:143:54: warning: ‘v8::Local<v8::Object> v8::Value::ToObject() const’ is deprecated: Use maybe version [-Wdeprecated-declarations]
+     v8::Local<v8::Object> object = info[0]->ToObject();
+                                                      ^
+In file included from /root/.node-gyp/11.15.0/include/node/node.h:63:0,
+                 from ../src/./binding.h:3,
+                 from ../src/binding.cc:1:
+/root/.node-gyp/11.15.0/include/node/v8.h:10257:15: note: declared here
+ Local<Object> Value::ToObject() const {
+               ^~~~~
+../src/binding.cc:148:52: warning: ‘v8::Local<v8::String> v8::Value::ToString() const’ is deprecated: Use maybe version [-Wdeprecated-declarations]
+     v8::String::Utf8Value param1(info[0]->ToString());
+                                                    ^
+In file included from /root/.node-gyp/11.15.0/include/node/node.h:63:0,
+                 from ../src/./binding.h:3,
+                 from ../src/binding.cc:1:
+/root/.node-gyp/11.15.0/include/node/v8.h:10251:15: note: declared here
+ Local<String> Value::ToString() const {
+               ^~~~~
+../src/binding.cc:148:53: warning: ‘v8::String::Utf8Value::Utf8Value(v8::Local<v8::Value>)’ is deprecated: Use Isolate version [-Wdeprecated-declarations]
+     v8::String::Utf8Value param1(info[0]->ToString());
+                                                     ^
+In file included from /root/.node-gyp/11.15.0/include/node/v8.h:26:0,
+                 from /root/.node-gyp/11.15.0/include/node/node.h:63,
+                 from ../src/./binding.h:3,
+                 from ../src/binding.cc:1:
+/root/.node-gyp/11.15.0/include/node/v8.h:2992:28: note: declared here
+                   explicit Utf8Value(Local<v8::Value> obj));
+                            ^
+/root/.node-gyp/11.15.0/include/node/v8config.h:326:3: note: in definition of macro ‘V8_DEPRECATED’
+   declarator __attribute__((deprecated(message)))
+   ^~~~~~~~~~
+../src/binding.cc: In function ‘Nan::NAN_METHOD_RETURN_TYPE nodesnappy::IsValidCompressed(Nan::NAN_METHOD_ARGS_TYPE)’:
+../src/binding.cc:161:52: warning: ‘v8::Local<v8::Object> v8::Value::ToObject() const’ is deprecated: Use maybe version [-Wdeprecated-declarations]
+   v8::Local<v8::Object> object = info[0]->ToObject();
+                                                    ^
+In file included from /root/.node-gyp/11.15.0/include/node/node.h:63:0,
+                 from ../src/./binding.h:3,
+                 from ../src/binding.cc:1:
+/root/.node-gyp/11.15.0/include/node/v8.h:10257:15: note: declared here
+ Local<Object> Value::ToObject() const {
+               ^~~~~
+../src/binding.cc: In function ‘Nan::NAN_METHOD_RETURN_TYPE nodesnappy::IsValidCompressedSync(Nan::NAN_METHOD_ARGS_TYPE)’:
+../src/binding.cc:181:52: warning: ‘v8::Local<v8::Object> v8::Value::ToObject() const’ is deprecated: Use maybe version [-Wdeprecated-declarations]
+   v8::Local<v8::Object> object = info[0]->ToObject();
+                                                    ^
+In file included from /root/.node-gyp/11.15.0/include/node/node.h:63:0,
+                 from ../src/./binding.h:3,
+                 from ../src/binding.cc:1:
+/root/.node-gyp/11.15.0/include/node/v8.h:10257:15: note: declared here
+ Local<Object> Value::ToObject() const {
+               ^~~~~
+../src/binding.cc: In function ‘Nan::NAN_METHOD_RETURN_TYPE nodesnappy::UncompressSync(Nan::NAN_METHOD_ARGS_TYPE)’:
+../src/binding.cc:218:52: warning: ‘v8::Local<v8::Object> v8::Value::ToObject() const’ is deprecated: Use maybe version [-Wdeprecated-declarations]
+   v8::Local<v8::Object> object = info[0]->ToObject();
+                                                    ^
+In file included from /root/.node-gyp/11.15.0/include/node/node.h:63:0,
+                 from ../src/./binding.h:3,
+                 from ../src/binding.cc:1:
+/root/.node-gyp/11.15.0/include/node/v8.h:10257:15: note: declared here
+ Local<Object> Value::ToObject() const {
+               ^~~~~
+binding.target.mk:106: recipe for target 'Release/obj.target/binding/src/binding.o' failed
+make: *** [Release/obj.target/binding/src/binding.o] Error 1
+make: Leaving directory '/home/workspace/webservice/server/node_modules/snappy/build'
+gyp ERR! build error 
+gyp ERR! stack Error: `make` failed with exit code: 2
+gyp ERR! stack     at ChildProcess.onExit (/usr/lib/node_modules/npm/node_modules/node-gyp/lib/build.js:262:23)
+gyp ERR! stack     at ChildProcess.emit (events.js:193:13)
+gyp ERR! stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:255:12)
+gyp ERR! System Linux 4.15.0-1058-gcp
+gyp ERR! command "/usr/bin/node" "/usr/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js" "rebuild"
+gyp ERR! cwd /home/workspace/webservice/server/node_modules/snappy
+gyp ERR! node -v v11.15.0
+gyp ERR! node-gyp -v v3.8.0
+gyp ERR! not ok 
+
+> zmq@2.15.3 install /home/workspace/webservice/server/node_modules/zmq
+> node-gyp rebuild
+
+make: Entering directory '/home/workspace/webservice/server/node_modules/zmq/build'
+  CXX(target) Release/obj.target/zmq/binding.o
+../binding.cc:28:10: fatal error: zmq.h: No such file or directory
+ #include <zmq.h>
+          ^~~~~~~
+compilation terminated.
+zmq.target.mk:101: recipe for target 'Release/obj.target/zmq/binding.o' failed
+make: *** [Release/obj.target/zmq/binding.o] Error 1
+make: Leaving directory '/home/workspace/webservice/server/node_modules/zmq/build'
+gyp ERR! build error 
+gyp ERR! stack Error: `make` failed with exit code: 2
+gyp ERR! stack     at ChildProcess.onExit (/usr/lib/node_modules/npm/node_modules/node-gyp/lib/build.js:262:23)
+gyp ERR! stack     at ChildProcess.emit (events.js:193:13)
+gyp ERR! stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:255:12)
+gyp ERR! System Linux 4.15.0-1058-gcp
+gyp ERR! command "/usr/bin/node" "/usr/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js" "rebuild"
+gyp ERR! cwd /home/workspace/webservice/server/node_modules/zmq
+gyp ERR! node -v v11.15.0
+gyp ERR! node-gyp -v v3.8.0
+gyp ERR! not ok 
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fs-ext@0.5.0 (node_modules/fs-ext):
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fs-ext@0.5.0 install: `node-gyp configure build`
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: Exit status 1
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: leveldown@1.4.6 (node_modules/leveldown):
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: leveldown@1.4.6 install: `prebuild --install`
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: Exit status 2
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: snappy@5.0.5 (node_modules/snappy):
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: snappy@5.0.5 install: `node-gyp rebuild`
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: Exit status 1
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: zmq@2.15.3 (node_modules/zmq):
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: zmq@2.15.3 install: `node-gyp rebuild`
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: Exit status 1
+
+audited 414 packages in 34.485s
+found 10 vulnerabilities (2 low, 1 moderate, 7 high)
+  run `npm audit fix` to fix them, or `npm audit` for details

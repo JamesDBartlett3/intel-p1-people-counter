@@ -1,0 +1,7 @@
+#!/bin/bash
+. ../docker-hooks.sh
+
+image="clearlinux/openvino"
+package=dldt
+
+do_tag $image $package

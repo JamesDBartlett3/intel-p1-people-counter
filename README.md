@@ -24,7 +24,7 @@ The counter will use the Inference Engine included in the Intel® Distribution o
         
 ## Run the application
 
-The big_red_button.sh script in the main workspace directory will install and launch everything:
+The big_red_button.sh script in the main workspace directory will install and launch everything:  
 `./big_red_button.sh`
 
 Then use the “Open App” button to view the output.

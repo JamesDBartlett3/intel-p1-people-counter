@@ -9,10 +9,10 @@ I downloaded and converted the following models:
 
 # Commands
 
-Create symlink to OpenVINO install directory in /home/workspace:
+Create symlink to OpenVINO install directory in /home/workspace:  
 `ln -s /opt/intel/openvino_2019.3.376/ openvino`
 
-Download TF models:
+Download TF models:  
 `python openvino/deployment_tools/tools/model_downloader/downloader.py --list ./models.txt`
 
 # Scripts

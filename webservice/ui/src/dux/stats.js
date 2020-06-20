@@ -4,8 +4,8 @@ const TOGGLE_COUNT = "features/stats/TOGGLE_COUNT";
 
 // initial state
 const initialState = {
-  statsOn: false,
-  totalCountOn: false,
+  statsOn: true,
+  totalCountOn: true,
   peopleSeen: [],
   currentCount: 0,
   currentDuration: null,

@@ -31,7 +31,7 @@ The counter will use the Inference Engine included in the Intel® Distribution o
 To clone my GitHub repo into your Udacity workspace, first select the "Reset Data" function from the Menu in the lower-left corner, to restore the workspace to its default settings. 
 When it asks you to confirm by typing "reset data" into the box, do so. 
 
-Resetting the workspace usually takes a minute or two. After that finishes, use the terminal in the Workspace to enter the following commands:
+Resetting the data usually takes a minute or two. After that finishes, use the terminal in the Workspace to enter the following commands:
 
 mkdir ../_old/
 mv ./* ../_old/

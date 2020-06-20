@@ -1,2 +1,1 @@
-#models/*/*.xml
-#models/*/*.bin
+*/.ipynb_checkpoints/*

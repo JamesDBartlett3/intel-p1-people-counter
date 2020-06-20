@@ -7,7 +7,8 @@ clear
 echo "====================================================="
 echo "Ladies and gentlemen, start your Inference Engines..."
 printf "=====================================================\n\n"
-printf "Launching App. \nPlease open the browser component to observe the results.\n"
+echo "================  Launching App  ===================="
+printf "\n  Please open your browser to observe the results!\n"
 python3 main.py -i resources/Pedestrian_Detect_2_1_1.mp4 \
     -m models/IRs/ssd_mobilenet_v2_coco/frozen_inference_graph.xml \
     -l /opt/intel/openvino/deployment_tools/inference_engine/lib/intel64/libcpu_extension_sse4.so \

@@ -33,11 +33,13 @@ When it asks you to confirm by typing "reset data" into the box, do so.
 
 Resetting the data usually takes a minute or two. After that finishes, use the terminal in the Workspace to enter the following commands:
 
+```
 mkdir ../_old/
 mv ./* ../_old/
 git init .
 git remote add origin https://github.com/JamesDBartlett/intel-p1-people-counter.git
 git pull origin main
+```
 
 Unfortunately, the Workspace doesn't allow us to close the default tabs, or change which files they point to, so there's one more step of setup to go.
 
@@ -50,7 +52,7 @@ Another minute or two later, the Workspace will reappear, and all visible files 
 From the /home/workspace directory:
 
 * To launch everything, simply run the big_red_button.sh script by typing this command into the terminal:
-./big_red_button.sh
+`./big_red_button.sh`
 
 Wait for the script to install and launch the back-end services. This usually takes 2-3 minutes.
 When the script finishes its setup stage, you will be prompted to click the “Open App” button to view the output. 

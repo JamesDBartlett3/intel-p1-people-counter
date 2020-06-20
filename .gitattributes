@@ -1,1 +1,1 @@
-*.bin filter=lfs merge=lfs -diff
+*.bin binary

@@ -70,22 +70,21 @@ That being said, some of the potential reasons for handling custom layers are:
   
 ## Comparing Model Performance
   
-My method(s) to compare models before and after conversion to Intermediate Representations:  
-- [I used Keras for the "Before"](https://www.youtube.com/watch?v=OO4HD-1wRN8)  
-- [I used OpenVINO for the "After"](#Model-Research)  
+- My method(s) to compare models before and after conversion to Intermediate Representations:  
+  - [I used Keras for the "Before"](https://www.youtube.com/watch?v=OO4HD-1wRN8)  
+  - [I used OpenVINO for the "After"](#Model-Research)  
 
 
-
+[__THE LAST REMAINING SECTION__]()  
+- [ ] The difference between model accuracy pre- and post-conversion was
+  - [ ] x
+- [ ] The size of the model pre- and post-conversion was
+  - [ ] y
+- [ ] The inference time of the model pre- and post-conversion was
+  - [ ] z
+  
 #  
-
-# [__THE LAST REMAINING SECTION__]()
-[__The difference between model accuracy pre- and post-conversion was...__]()  
-[__The size of the model pre- and post-conversion was...__]()   
-[__The inference time of the model pre- and post-conversion was...__]()  
-
-
-#  
-
+  
 ## Assess Model Use Cases
   
 Some of the potential use cases of the people counter app are:  

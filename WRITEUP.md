@@ -59,7 +59,7 @@ Some of the potential reasons for handling custom layers are:
 ## Comparing Model Performance
   
 My method(s) to compare models before and after conversion to Intermediate Representations:  
-- [I used Keras for the "Before"](https://www.youtube.com/watch?v=OO4HD-1wRN8&t=318s)  
+- [I used Keras for the "Before"](https://www.youtube.com/watch?v=OO4HD-1wRN8)  
 - [I used OpenVINO for the "After"](#Model-Research)  
   
 The difference between model accuracy pre- and post-conversion was...  

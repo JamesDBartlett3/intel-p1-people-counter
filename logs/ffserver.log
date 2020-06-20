@@ -13,27 +13,7 @@ ffserver version 2.8.15-0ubuntu0.16.04.1 Copyright (c) 2000-2018 the FFmpeg deve
 ./ffmpeg/server.conf:32: Setting default value for video bit rate tolerance = 2048000. Use NoDefaults to disable it.
 ./ffmpeg/server.conf:32: Setting default value for video rate control equation = tex^qComp. Use NoDefaults to disable it.
 ./ffmpeg/server.conf:32: Setting default value for video max rate = 16384000. Use NoDefaults to disable it.
-Sat Jun  6 04:06:01 2020 FFserver started.
-Sat Jun  6 04:06:08 2020 127.0.0.1 - - [GET] "/fac.ffm HTTP/1.1" 200 4175
-Sat Jun  6 04:06:08 2020 127.0.0.1 - - [POST] "/fac.ffm HTTP/1.1" 200 4096
-Sat Jun  6 04:08:05 2020 127.0.0.1 - - [GET] "/fac.ffm HTTP/1.1" 200 4175
-Sat Jun  6 04:08:05 2020 127.0.0.1 - - [POST] "/fac.ffm HTTP/1.1" 200 4096
-Sat Jun  6 04:09:01 2020 127.0.0.1 - - [GET] "/fac.ffm HTTP/1.1" 200 4175
-Sat Jun  6 04:09:01 2020 127.0.0.1 - - [POST] "/fac.ffm HTTP/1.1" 200 4096
-Sat Jun  6 04:09:01 2020 172.18.0.1 - - [GET] "/facstream.mjpeg HTTP/1.1" 200 108
-Sat Jun  6 04:11:10 2020 127.0.0.1 - - [GET] "/fac.ffm HTTP/1.1" 200 4175
-Sat Jun  6 04:11:10 2020 127.0.0.1 - - [POST] "/fac.ffm HTTP/1.1" 200 4096
-Sat Jun  6 04:13:56 2020 127.0.0.1 - - [GET] "/fac.ffm HTTP/1.1" 200 4175
-Sat Jun  6 04:13:56 2020 127.0.0.1 - - [POST] "/fac.ffm HTTP/1.1" 200 4096
-Sat Jun  6 04:14:41 2020 127.0.0.1 - - [GET] "/fac.ffm HTTP/1.1" 200 4175
-Sat Jun  6 04:14:41 2020 127.0.0.1 - - [POST] "/fac.ffm HTTP/1.1" 200 4096
-Sat Jun  6 04:16:21 2020 127.0.0.1 - - [GET] "/fac.ffm HTTP/1.1" 200 4175
-Sat Jun  6 04:16:21 2020 127.0.0.1 - - [POST] "/fac.ffm HTTP/1.1" 200 4096
-Sat Jun  6 04:16:47 2020 127.0.0.1 - - [GET] "/fac.ffm HTTP/1.1" 200 4175
-Sat Jun  6 04:16:47 2020 127.0.0.1 - - [POST] "/fac.ffm HTTP/1.1" 200 4096
-Sat Jun  6 04:18:04 2020 127.0.0.1 - - [GET] "/fac.ffm HTTP/1.1" 200 4175
-Sat Jun  6 04:18:04 2020 127.0.0.1 - - [POST] "/fac.ffm HTTP/1.1" 200 4096
-Sat Jun  6 04:18:22 2020 127.0.0.1 - - [GET] "/fac.ffm HTTP/1.1" 200 4175
-Sat Jun  6 04:18:22 2020 127.0.0.1 - - [POST] "/fac.ffm HTTP/1.1" 200 4096
-Sat Jun  6 04:27:35 2020 127.0.0.1 - - [GET] "/fac.ffm HTTP/1.1" 200 4175
-Sat Jun  6 04:27:35 2020 127.0.0.1 - - [POST] "/fac.ffm HTTP/1.1" 200 4096
+Sat Jun 20 10:09:01 2020 FFserver started.
+Sat Jun 20 10:09:09 2020 127.0.0.1 - - [GET] "/fac.ffm HTTP/1.1" 200 41039
+Sat Jun 20 10:09:46 2020 172.18.0.1 - - [GET] "/facstream.mjpeg HTTP/1.1" 200 7562127
+Sat Jun 20 10:12:26 2020 127.0.0.1 - - [POST] "/fac.ffm HTTP/1.1" 200 59703296

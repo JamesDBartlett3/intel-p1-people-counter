@@ -18,13 +18,19 @@ The counter will use the Inference Engine included in the Intel® Distribution o
 
 ## Requirements
 
-### Hardware & Software
+### Hardware
+
+- None
+
+### Software
 
 - This project MUST be run in the Udacity workspace. It will not work elsewhere.
         
 ## Run the application
 
-The big_red_button.sh script in the main workspace directory will install and launch everything:  
-`./big_red_button.sh`
+From the main directory:
 
-Then use the “Open App” button to view the output.
+* To launch everything, run the big_red_button.sh script:
+./big_red_button.sh
+
+Then use the “Open App” button to view the output. 

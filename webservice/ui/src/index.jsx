@@ -48,7 +48,7 @@ let StatsOn = false;
 
 const togglePanel = function(){
   console.log( "toggling panel");
-  StatsOn = !StatsOn;  
+  StatsOn = !StatsOn;
 }
 
 

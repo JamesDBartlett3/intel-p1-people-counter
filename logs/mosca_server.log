@@ -1,163 +1,1497 @@
 Mosca server started.
-Client mqttjs_48d5eed5 connected
-Published to $SYS/ICcViaM/new/clients <- mqttjs_48d5eed5
-Client mqttjs_48d5eed5 subscribed to person.
-Client mqttjs_48d5eed5 subscribed to person/duration.
+Client de566a04-e972-4d1c-9bc1-f807c38a242a connected
+Published to $SYS/GUC_gFm/new/clients <- de566a04-e972-4d1c-9bc1-f807c38a242a
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Client mqttjs_e96441af connected
+Published to $SYS/GUC_gFm/new/clients <- mqttjs_e96441af
+Client mqttjs_e96441af subscribed to person.
+Client mqttjs_e96441af subscribed to person/duration.
 Published to presence <- "hello from react"
-Published to $SYS/ICcViaM/new/subscribes <- {"clientId":"mqttjs_48d5eed5","topic":"person"}
-Published to $SYS/ICcViaM/new/subscribes <- {"clientId":"mqttjs_48d5eed5","topic":"person/duration"}
-Client mqttjs_48d5eed5 unsubscribed from person.
-Client mqttjs_48d5eed5 unsubscribed from person/duration.
-Client mqttjs_48d5eed5
-Published to $SYS/ICcViaM/new/unsubscribes <- {"clientId":"mqttjs_48d5eed5","topic":"person"}
-Published to $SYS/ICcViaM/new/unsubscribes <- {"clientId":"mqttjs_48d5eed5","topic":"person/duration"}
-Published to $SYS/ICcViaM/disconnect/clients <- mqttjs_48d5eed5
-Client mqttjs_48d5eed5 connected
-Published to $SYS/ICcViaM/new/clients <- mqttjs_48d5eed5
-Client mqttjs_48d5eed5 subscribed to person.
-Client mqttjs_48d5eed5 subscribed to person/duration.
+Published to $SYS/GUC_gFm/new/subscribes <- {"clientId":"mqttjs_e96441af","topic":"person"}
+Published to $SYS/GUC_gFm/new/subscribes <- {"clientId":"mqttjs_e96441af","topic":"person/duration"}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Client mqttjs_e96441af unsubscribed from person.
+Client mqttjs_e96441af unsubscribed from person/duration.
+Client mqttjs_e96441af
+Published to $SYS/GUC_gFm/new/unsubscribes <- {"clientId":"mqttjs_e96441af","topic":"person"}
+Published to $SYS/GUC_gFm/new/unsubscribes <- {"clientId":"mqttjs_e96441af","topic":"person/duration"}
+Published to $SYS/GUC_gFm/disconnect/clients <- mqttjs_e96441af
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Client mqttjs_96eda390 connected
+Published to $SYS/GUC_gFm/new/clients <- mqttjs_96eda390
+Published to person <- {"count": 0}
+Published to person <- {"total": 1}
+Published to person <- {"count": 1}
+Client mqttjs_96eda390 subscribed to person.
+Client mqttjs_96eda390 subscribed to person/duration.
 Published to presence <- "hello from react"
-Published to $SYS/ICcViaM/new/subscribes <- {"clientId":"mqttjs_48d5eed5","topic":"person"}
-Published to $SYS/ICcViaM/new/subscribes <- {"clientId":"mqttjs_48d5eed5","topic":"person/duration"}
-Client mqttjs_48d5eed5 unsubscribed from person.
-Client mqttjs_48d5eed5 unsubscribed from person/duration.
-Client mqttjs_48d5eed5
-Published to $SYS/ICcViaM/new/unsubscribes <- {"clientId":"mqttjs_48d5eed5","topic":"person"}
-Published to $SYS/ICcViaM/new/unsubscribes <- {"clientId":"mqttjs_48d5eed5","topic":"person/duration"}
-Published to $SYS/ICcViaM/disconnect/clients <- mqttjs_48d5eed5
-Client mqttjs_48d5eed5 connected
-Published to $SYS/ICcViaM/new/clients <- mqttjs_48d5eed5
-Client mqttjs_48d5eed5 subscribed to person.
-Client mqttjs_48d5eed5 subscribed to person/duration.
-Published to presence <- "hello from react"
-Published to $SYS/ICcViaM/new/subscribes <- {"clientId":"mqttjs_48d5eed5","topic":"person"}
-Published to $SYS/ICcViaM/new/subscribes <- {"clientId":"mqttjs_48d5eed5","topic":"person/duration"}
-Client ddaf3a7b-5232-41c4-9606-6db66f3e817e connected
-Published to $SYS/ICcViaM/new/clients <- ddaf3a7b-5232-41c4-9606-6db66f3e817e
-Client ddaf3a7b-5232-41c4-9606-6db66f3e817e
-Published to $SYS/ICcViaM/disconnect/clients <- ddaf3a7b-5232-41c4-9606-6db66f3e817e
-Client mqttjs_48d5eed5 unsubscribed from person.
-Client mqttjs_48d5eed5 unsubscribed from person/duration.
-Client mqttjs_48d5eed5
-Published to $SYS/ICcViaM/new/unsubscribes <- {"clientId":"mqttjs_48d5eed5","topic":"person"}
-Published to $SYS/ICcViaM/new/unsubscribes <- {"clientId":"mqttjs_48d5eed5","topic":"person/duration"}
-Published to $SYS/ICcViaM/disconnect/clients <- mqttjs_48d5eed5
-Client mqttjs_48d5eed5 connected
-Published to $SYS/ICcViaM/new/clients <- mqttjs_48d5eed5
-Client mqttjs_48d5eed5 subscribed to person.
-Client mqttjs_48d5eed5 subscribed to person/duration.
-Published to presence <- "hello from react"
-Published to $SYS/ICcViaM/new/subscribes <- {"clientId":"mqttjs_48d5eed5","topic":"person"}
-Published to $SYS/ICcViaM/new/subscribes <- {"clientId":"mqttjs_48d5eed5","topic":"person/duration"}
-Client mqttjs_48d5eed5 unsubscribed from person.
-Client mqttjs_48d5eed5 unsubscribed from person/duration.
-Client mqttjs_48d5eed5
-Published to $SYS/ICcViaM/new/unsubscribes <- {"clientId":"mqttjs_48d5eed5","topic":"person"}
-Published to $SYS/ICcViaM/new/unsubscribes <- {"clientId":"mqttjs_48d5eed5","topic":"person/duration"}
-Published to $SYS/ICcViaM/disconnect/clients <- mqttjs_48d5eed5
-Client mqttjs_48d5eed5 connected
-Published to $SYS/ICcViaM/new/clients <- mqttjs_48d5eed5
-Client mqttjs_48d5eed5 subscribed to person.
-Client mqttjs_48d5eed5 subscribed to person/duration.
-Published to presence <- "hello from react"
-Published to $SYS/ICcViaM/new/subscribes <- {"clientId":"mqttjs_48d5eed5","topic":"person"}
-Published to $SYS/ICcViaM/new/subscribes <- {"clientId":"mqttjs_48d5eed5","topic":"person/duration"}
-Client 44c4acd6-4d38-45f8-906b-71545e5c4a87 connected
-Published to $SYS/ICcViaM/new/clients <- 44c4acd6-4d38-45f8-906b-71545e5c4a87
-Client 44c4acd6-4d38-45f8-906b-71545e5c4a87
-Published to $SYS/ICcViaM/disconnect/clients <- 44c4acd6-4d38-45f8-906b-71545e5c4a87
-Client mqttjs_48d5eed5 unsubscribed from person.
-Client mqttjs_48d5eed5 unsubscribed from person/duration.
-Client mqttjs_48d5eed5
-Published to $SYS/ICcViaM/new/unsubscribes <- {"clientId":"mqttjs_48d5eed5","topic":"person"}
-Published to $SYS/ICcViaM/new/unsubscribes <- {"clientId":"mqttjs_48d5eed5","topic":"person/duration"}
-Published to $SYS/ICcViaM/disconnect/clients <- mqttjs_48d5eed5
-Client mqttjs_48d5eed5 connected
-Published to $SYS/ICcViaM/new/clients <- mqttjs_48d5eed5
-Client mqttjs_48d5eed5 subscribed to person.
-Client mqttjs_48d5eed5 subscribed to person/duration.
-Published to presence <- "hello from react"
-Published to $SYS/ICcViaM/new/subscribes <- {"clientId":"mqttjs_48d5eed5","topic":"person"}
-Published to $SYS/ICcViaM/new/subscribes <- {"clientId":"mqttjs_48d5eed5","topic":"person/duration"}
-Client cf029384-fb3d-4eab-8df6-82d45488876d connected
-Published to $SYS/ICcViaM/new/clients <- cf029384-fb3d-4eab-8df6-82d45488876d
-Client cf029384-fb3d-4eab-8df6-82d45488876d
-Published to $SYS/ICcViaM/disconnect/clients <- cf029384-fb3d-4eab-8df6-82d45488876d
-Client mqttjs_48d5eed5 unsubscribed from person.
-Client mqttjs_48d5eed5 unsubscribed from person/duration.
-Client mqttjs_48d5eed5
-Published to $SYS/ICcViaM/new/unsubscribes <- {"clientId":"mqttjs_48d5eed5","topic":"person"}
-Published to $SYS/ICcViaM/new/unsubscribes <- {"clientId":"mqttjs_48d5eed5","topic":"person/duration"}
-Published to $SYS/ICcViaM/disconnect/clients <- mqttjs_48d5eed5
-Client mqttjs_48d5eed5 connected
-Published to $SYS/ICcViaM/new/clients <- mqttjs_48d5eed5
-Client mqttjs_48d5eed5 subscribed to person.
-Client mqttjs_48d5eed5 subscribed to person/duration.
-Published to presence <- "hello from react"
-Published to $SYS/ICcViaM/new/subscribes <- {"clientId":"mqttjs_48d5eed5","topic":"person"}
-Published to $SYS/ICcViaM/new/subscribes <- {"clientId":"mqttjs_48d5eed5","topic":"person/duration"}
-Client mqttjs_48d5eed5 unsubscribed from person.
-Client mqttjs_48d5eed5 unsubscribed from person/duration.
-Client mqttjs_48d5eed5
-Published to $SYS/ICcViaM/new/unsubscribes <- {"clientId":"mqttjs_48d5eed5","topic":"person"}
-Published to $SYS/ICcViaM/new/unsubscribes <- {"clientId":"mqttjs_48d5eed5","topic":"person/duration"}
-Published to $SYS/ICcViaM/disconnect/clients <- mqttjs_48d5eed5
-Client mqttjs_48d5eed5 connected
-Published to $SYS/ICcViaM/new/clients <- mqttjs_48d5eed5
-Client mqttjs_48d5eed5 subscribed to person.
-Client mqttjs_48d5eed5 subscribed to person/duration.
-Published to presence <- "hello from react"
-Published to $SYS/ICcViaM/new/subscribes <- {"clientId":"mqttjs_48d5eed5","topic":"person"}
-Published to $SYS/ICcViaM/new/subscribes <- {"clientId":"mqttjs_48d5eed5","topic":"person/duration"}
-Client 5a683d8c-7d54-406a-844e-8ce5a7632327 connected
-Published to $SYS/ICcViaM/new/clients <- 5a683d8c-7d54-406a-844e-8ce5a7632327
-Client 5a683d8c-7d54-406a-844e-8ce5a7632327
-Published to $SYS/ICcViaM/disconnect/clients <- 5a683d8c-7d54-406a-844e-8ce5a7632327
-Client 1d2c9cfd-2d44-4191-9413-98233c3035de connected
-Published to $SYS/ICcViaM/new/clients <- 1d2c9cfd-2d44-4191-9413-98233c3035de
-Client 1d2c9cfd-2d44-4191-9413-98233c3035de
-Published to $SYS/ICcViaM/disconnect/clients <- 1d2c9cfd-2d44-4191-9413-98233c3035de
-Client mqttjs_48d5eed5 unsubscribed from person.
-Client mqttjs_48d5eed5 unsubscribed from person/duration.
-Client mqttjs_48d5eed5
-Published to $SYS/ICcViaM/new/unsubscribes <- {"clientId":"mqttjs_48d5eed5","topic":"person"}
-Published to $SYS/ICcViaM/new/unsubscribes <- {"clientId":"mqttjs_48d5eed5","topic":"person/duration"}
-Published to $SYS/ICcViaM/disconnect/clients <- mqttjs_48d5eed5
-Client mqttjs_48d5eed5 connected
-Published to $SYS/ICcViaM/new/clients <- mqttjs_48d5eed5
-Client mqttjs_48d5eed5 subscribed to person.
-Client mqttjs_48d5eed5 subscribed to person/duration.
-Published to presence <- "hello from react"
-Published to $SYS/ICcViaM/new/subscribes <- {"clientId":"mqttjs_48d5eed5","topic":"person"}
-Published to $SYS/ICcViaM/new/subscribes <- {"clientId":"mqttjs_48d5eed5","topic":"person/duration"}
-Client 0adf70d8-3ebf-461b-9154-40985e2e89d7 connected
-Published to $SYS/ICcViaM/new/clients <- 0adf70d8-3ebf-461b-9154-40985e2e89d7
-Client 0adf70d8-3ebf-461b-9154-40985e2e89d7
-Published to $SYS/ICcViaM/disconnect/clients <- 0adf70d8-3ebf-461b-9154-40985e2e89d7
-Client mqttjs_48d5eed5 unsubscribed from person.
-Client mqttjs_48d5eed5 unsubscribed from person/duration.
-Client mqttjs_48d5eed5
-Published to $SYS/ICcViaM/new/unsubscribes <- {"clientId":"mqttjs_48d5eed5","topic":"person"}
-Published to $SYS/ICcViaM/new/unsubscribes <- {"clientId":"mqttjs_48d5eed5","topic":"person/duration"}
-Published to $SYS/ICcViaM/disconnect/clients <- mqttjs_48d5eed5
-Client mqttjs_48d5eed5 connected
-Published to $SYS/ICcViaM/new/clients <- mqttjs_48d5eed5
-Client mqttjs_48d5eed5 subscribed to person.
-Client mqttjs_48d5eed5 subscribed to person/duration.
-Published to presence <- "hello from react"
-Published to $SYS/ICcViaM/new/subscribes <- {"clientId":"mqttjs_48d5eed5","topic":"person"}
-Published to $SYS/ICcViaM/new/subscribes <- {"clientId":"mqttjs_48d5eed5","topic":"person/duration"}
-Client 15efbf6f-1d14-4e44-98dc-a63bb191b7b7 connected
-Published to $SYS/ICcViaM/new/clients <- 15efbf6f-1d14-4e44-98dc-a63bb191b7b7
-Client 15efbf6f-1d14-4e44-98dc-a63bb191b7b7
-Published to $SYS/ICcViaM/disconnect/clients <- 15efbf6f-1d14-4e44-98dc-a63bb191b7b7
-Client mqttjs_48d5eed5 unsubscribed from person.
-Client mqttjs_48d5eed5 unsubscribed from person/duration.
-Client mqttjs_48d5eed5
-Published to $SYS/ICcViaM/new/unsubscribes <- {"clientId":"mqttjs_48d5eed5","topic":"person"}
-Published to $SYS/ICcViaM/new/unsubscribes <- {"clientId":"mqttjs_48d5eed5","topic":"person/duration"}
-Published to $SYS/ICcViaM/disconnect/clients <- mqttjs_48d5eed5
-Client ec124ce5-e87d-41ad-bf21-46860110afe3 connected
-Published to $SYS/ICcViaM/new/clients <- ec124ce5-e87d-41ad-bf21-46860110afe3
-Client ec124ce5-e87d-41ad-bf21-46860110afe3
-Published to $SYS/ICcViaM/disconnect/clients <- ec124ce5-e87d-41ad-bf21-46860110afe3
+Published to $SYS/GUC_gFm/new/subscribes <- {"clientId":"mqttjs_96eda390","topic":"person"}
+Published to $SYS/GUC_gFm/new/subscribes <- {"clientId":"mqttjs_96eda390","topic":"person/duration"}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person/duration <- {"duration": 1}
+Published to person <- {"count": 0}
+Published to person <- {"total": 2}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person/duration <- {"duration": 14}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"total": 3}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person/duration <- {"duration": 1}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Client mqttjs_96eda390 unsubscribed from person.
+Client mqttjs_96eda390 unsubscribed from person/duration.
+Client mqttjs_96eda390
+Published to $SYS/GUC_gFm/new/unsubscribes <- {"clientId":"mqttjs_96eda390","topic":"person"}
+Published to $SYS/GUC_gFm/new/unsubscribes <- {"clientId":"mqttjs_96eda390","topic":"person/duration"}
+Published to $SYS/GUC_gFm/disconnect/clients <- mqttjs_96eda390
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"total": 4}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person/duration <- {"duration": 1}
+Published to person <- {"count": 0}
+Published to person <- {"total": 5}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person/duration <- {"duration": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"total": 6}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person/duration <- {"duration": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"total": 7}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person/duration <- {"duration": 1}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"total": 8}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person/duration <- {"duration": 1}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"total": 9}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person/duration <- {"duration": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"total": 10}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person/duration <- {"duration": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"total": 11}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person/duration <- {"duration": 10}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"total": 12}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person/duration <- {"duration": 2}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"total": 13}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person/duration <- {"duration": 2}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"total": 14}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person/duration <- {"duration": 1}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"total": 15}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person/duration <- {"duration": 14}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"total": 16}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"total": 17}
+Published to person <- {"count": 2}
+Published to person/duration <- {"duration": 0}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person/duration <- {"duration": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"total": 18}
+Published to person <- {"count": 1}
+Published to person/duration <- {"duration": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"total": 19}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person/duration <- {"duration": 2}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"total": 20}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person/duration <- {"duration": 1}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"total": 21}
+Published to person <- {"count": 1}
+Published to person/duration <- {"duration": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"total": 22}
+Published to person <- {"count": 1}
+Published to person/duration <- {"duration": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"total": 23}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person/duration <- {"duration": 3}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"total": 24}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person/duration <- {"duration": 15}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"total": 25}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person/duration <- {"duration": 0}
+Published to person <- {"count": 0}
+Published to person <- {"total": 26}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person/duration <- {"duration": 0}
+Published to person <- {"count": 0}
+Published to person <- {"total": 27}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person/duration <- {"duration": 2}
+Published to person <- {"count": 0}
+Published to person <- {"total": 28}
+Published to person <- {"count": 1}
+Published to person/duration <- {"duration": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"total": 29}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person/duration <- {"duration": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"total": 30}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person/duration <- {"duration": 1}
+Published to person <- {"count": 0}
+Published to person <- {"total": 31}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person/duration <- {"duration": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"total": 32}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person/duration <- {"duration": 2}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"total": 33}
+Published to person <- {"count": 1}
+Published to person/duration <- {"duration": 0}
+Published to person <- {"count": 0}
+Published to person <- {"total": 34}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person/duration <- {"duration": 10}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"total": 35}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person <- {"count": 1}
+Published to person/duration <- {"duration": 1}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"total": 36}
+Published to person <- {"count": 1}
+Published to person/duration <- {"duration": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Published to person <- {"count": 0}
+Client de566a04-e972-4d1c-9bc1-f807c38a242a
+Published to $SYS/GUC_gFm/disconnect/clients <- de566a04-e972-4d1c-9bc1-f807c38a242a

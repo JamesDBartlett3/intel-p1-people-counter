@@ -5,11 +5,12 @@
 Project is running at [1m[34mhttp://0.0.0.0:3000/[39m[22m
 webpack output is served from [1m[34m/[39m[22m
 404s will fallback to [1m[34m/index.html[39m[22m
-(node:1328) DeprecationWarning: loaderUtils.parseQuery() received a non-string value which can be problematic, see https://github.com/webpack/loader-utils/issues/56
+(node:9689) DeprecationWarning: loaderUtils.parseQuery() received a non-string value which can be problematic, see https://github.com/webpack/loader-utils/issues/56
 parseQuery() will be replaced with getOptions() in the next major version of loader-utils.
-Hash: [1m59f75d0aeb64ce96472d[39m[22m
+webpack: wait until bundle finished: /
+Hash: [1m924d6197408549236abe[39m[22m
 Version: webpack [1m2.7.0[39m[22m
-Time: [1m9558[39m[22mms
+Time: [1m12625[39m[22mms
                                    [1mAsset[39m[22m       [1mSize[39m[22m  [1mChunks[39m[22m  [1m[39m[22m           [1m[39m[22m       [1mChunk Names[39m[22m
                                [1m[33mbundle.js[39m[22m    [1m[33m15.8 MB[39m[22m       [1m0[39m[22m  [1m[32m[emitted][39m[22m  [1m[33m[big][39m[22m  main
                               [1m[32mindex.html[39m[22m  414 bytes        [1m[39m[22m  [1m[32m[emitted][39m[22m         

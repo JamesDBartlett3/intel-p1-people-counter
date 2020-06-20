@@ -1,36 +1,14 @@
-# Models
-I downloaded and converted the following models: 
-- faster_rcnn_inception_v2_coco
-- faster_rcnn_resnet50_coco
-- mask_rcnn_inception_v2_coco
-- mask_rcnn_resnet50_atrous_coco
-- ssd_mobilenet_v1_coco
-- ssd_mobilenet_v2_coco
-
 # Commands
 
-Create symlink to OpenVINO install directory in /home/workspace:  
+Create symlink to OpenVINO install directory in /home/workspace:
 `ln -s /opt/intel/openvino_2019.3.376/ openvino`
 
-Download TF models:  
+Download TF models:
 `python openvino/deployment_tools/tools/model_downloader/downloader.py --list ./models.txt`
 
 # Scripts
 
-Trim dates from IR folder names (date_trim.sh):
-```
-#!/bin/bash
-
-# Removes 11 characters and a trailing slash (if exists) 
-# from the end of the given file or folder name
-
-pretrim=${@%/}
-mv $pretrim ${pretrim::(-11)}
-
-```
-
 Convert to IR (mass_convert_tf_ir.sh):
-```
 #!/bin/bash
 
 # Takes 2 arguments: 
@@ -54,13 +32,25 @@ do
         -o IRs/$i
     rm -rf $i
 done
-```
+
+
+Trim dates from IR folder names (date_trim.sh):
+#!/bin/bash
+
+# Removes 11 characters and a trailing slash (if exists) 
+# from the end of the given file or folder name
+
+pretrim=${@%/}
+mv $pretrim ${pretrim::(-11)}
+
+
 
 # Project Write-Up
 
+
 ## Explaining Custom Layers
 
-I'm behind schedule, so I didn't think it would be a good idea to make things more complicated than they need to be. Therefore, I chose not to use any models with custom layers.
+I'm behind schedule, so I didn't think it would be a good idea to make things more complicated than they need to be. Therefore, I chose not to use custom layers.
 
 Some of the potential reasons for handling custom layers are:
 - If you wanted to get some performance that you couldn't get without the custom layers

@@ -7,7 +7,10 @@ export LOGDIR=$HWS/logs
 source /opt/intel/openvino/bin/setupvars.sh -pyver 3.5
 
 # Install dependencies (if needed)
-python3 -m pip install numpy tqdm requests pyyaml paho-mqtt --upgrade -t /usr/local/lib/python3.5/dist-packages
+python3 -m pip install \
+    certifi==2019.11.28 chardet==3.0.4 idna==2.8 numpy==1.17.4 \
+    tqdm==4.46.1 requests==2.22.0 pyyaml==5.2 paho-mqtt==1.5.0 \
+    urllib3==1.25.7 #--upgrade -t /usr/local/lib/python3.5/dist-packages
 
 # All logs will go here
 mkdir -p $LOGDIR

@@ -24,6 +24,7 @@
 
 import os
 import sys
+import time
 import logging as log
 from openvino.inference_engine import IENetwork, IEPlugin
 
@@ -126,8 +127,11 @@ class Network:
         :param frame: Input image
         :return: Instance of Executable Network class
         """
+        start = time.time()
         self.infer_request_handle = self.net_plugin.start_async(
             request_id=request_id, inputs={self.input_blob: frame})
+        end = time.time()
+        print("Inference Time: " + end - start)
         return self.net_plugin
 
     def wait(self, request_id):

@@ -127,11 +127,11 @@ class Network:
         :param frame: Input image
         :return: Instance of Executable Network class
         """
-        start = time.time()
+        #start = time.time()
         self.infer_request_handle = self.net_plugin.start_async(
             request_id=request_id, inputs={self.input_blob: frame})
-        end = time.time()
-        print("Inference Time: " + end - start)
+        #end = time.time()
+        #print("Inference Time: " + str(end - start))
         return self.net_plugin
 
     def wait(self, request_id):

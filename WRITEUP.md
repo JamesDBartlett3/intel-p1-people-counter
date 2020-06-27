@@ -3,10 +3,10 @@
 # Useful Shell Commands
   
 Create symlink to OpenVINO install directory in /home/workspace (shortens the commands for mo.py significantly):  
->`ln -s /opt/intel/openvino_2019.3.376/ openvino`
+`ln -s /opt/intel/openvino_2019.3.376/ openvino`
   
 Download TF models:  
->`python openvino/deployment_tools/tools/model_downloader/downloader.py --list ./models.txt`
+`python openvino/deployment_tools/tools/model_downloader/downloader.py --list ./models.txt`
   
 ---
   
@@ -14,7 +14,8 @@ Download TF models:
   
 ## Mass Convert TF to IR  
   
->`mass_convert_tf_ir.sh`  
+>mass_convert_tf_ir.sh
+
 ```
 #!/bin/bash
 
@@ -39,12 +40,13 @@ do
         -o IRs/$i
     rm -rf $i
 done
+
 ```
-#  
 
 ## Trim Dates From IR Folders  
   
->`date_trim.sh`  
+>date_trim.sh 
+
 ```
 #!/bin/bash
 
@@ -59,24 +61,21 @@ mv $pretrim ${pretrim::(-11)}
 # Project Write-Up
 
 ## Notes to Instructor
-I decided early on in the process to base my project on the starter code from Intel's official intel-iot-devkit/people-counter-python repository on GitHub rather than the starter code from the Udacity repo, as I found its comments to be more instructive, and the general workflow more to my liking. 
+
+I decided early on in the process to base my project on the starter code from Intel's official [intel-iot-devkit/people-counter-python](https://github.com/intel-iot-devkit/people-counter-python) repo on GitHub, rather than the starter code from the [udacity/nd131-openvino-fundamentals-project-starter](https://github.com/udacity/nd131-openvino-fundamentals-project-starter) repo, because I found Intel's comments more instructive, and the general workflow more to my liking.
   
 ## Explaining Custom Layers
   
 I'm behind schedule, so I didn't think it would be a good idea to make things more complicated than they need to be. Therefore, I chose not to use custom layers.  
-  
 That being said, some of the potential reasons for handling custom layers are:  
 - Increased model performance 
 - Better model specialization for specific use cases and scenarios
-
-#  
   
 ## Comparing Model Performance
   
 - My method(s) to compare models before and after conversion to Intermediate Representations:  
   - [I used Keras for the "Before"](https://www.youtube.com/watch?v=OO4HD-1wRN8)  
   - [I used OpenVINO for the "After"](#Model-Research)  
-
 
 [__THE LAST REMAINING SECTION__]()  
 - [ ] The difference between model accuracy pre- and post-conversion was
@@ -85,8 +84,6 @@ That being said, some of the potential reasons for handling custom layers are:
   - [ ] y
 - [ ] The inference time of the model pre- and post-conversion was
   - [ ] z
-  
-#  
   
 ## Assess Model Use Cases
   
@@ -100,16 +97,12 @@ Each of these use cases would be useful because:
 - It would be possible to calculate the number of people who came into the store, but didn't buy anything  
 - It would be possible to determine if the venue had exceeded its occupancy limit  
 
-#  
-
 ## Assess Effects on End User Needs
   
 Lighting, model accuracy, and camera focal length/image size have different effects on a deployed edge model. The potential effects of each of these are as follows...  
 - Adequate lighting is necessary in order to achieve enough contrast that the model can make accurate inferences.  
 - Model accuracy is important because if it's not accurate, then you can't make accurate calculations from the data.   
 - If the image isn't in focus, then the model won't be able to make accurate inferences.  
-
-#  
 
 ## Model Research  
   
@@ -143,9 +136,12 @@ In investigating potential people counter models, I tried each of the following 
     - The severity of the flicker also appeared to have a non-linear relationship to the magnitude of the subject's motion in-frame. It tended to perform quite poorly at the higher end of the range of recorded subject velocities, somewhat better at the opposite end of the range, and it seemed at its best when the subject was moving, but not too quickly. I suspect that there is a certain degree of bias trained into the model, expecting that human subjects are nearly always in motion, to an extent. In most contexts, this kind of bias is probably beneficial, as it would tend to ignore stationary objects that merely look like humans, such as statues, posters, mannequins, etc. However, there are many other potential applications for specialized Edge AI human detection technology, which would be hindered if the underlying model tended to ignore humans moving at the far ends of the velocity range -- such as intrusion detection, law enforcement, healthcare, and sports, to name a few.
   - How I improved the model for the app:
     - Lowered the confidence threshold necessary to register a detection and trigger a bounding box
-    - Added a smoothing mechanism to counteract the flickering
-    - Implemented a "miliseconds since last detection" timer
-    - Added conditional logic to the count incrementer, to reduce the frequency of double-counting a single subject, using a 2/3 majority of the following thresholds:
+    - Added conditional logic to the count incrementer, to reduce the frequency of double-counting a single subject, using:
+      - The bounding box's last known intersection with either the bottom or right edge of the frame
+      - A rolling average of detections from the last 30 frames to counteract jitter
+  - How I would have liked to improve the app, if I had more time:
+    - Using a 3/4 majority of the following thresholds, to classify each detection event as "unique" or "duplicate":
+      - Confidence threshold greater than W
       - Bounding box distance from edge of frame less than X
       - Bounding box distance from location of last detection greater than Y
       - Miliseconds since last detection greater than Z

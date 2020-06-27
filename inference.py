@@ -43,7 +43,16 @@ class Network:
         self.net_plugin = None
         self.infer_request_handle = None
 
-    def load_model(self, model, device, input_size, output_size, num_requests, cpu_extension=None, plugin=None):
+    def load_model(
+        self,
+        model,
+        device,
+        input_size,
+        output_size,
+        num_requests,
+        cpu_extension=None,
+        plugin=None,
+    ):
         """
          Loads a network and an image to the Inference Engine plugin.
         :param model: .xml file of pre trained model
@@ -66,7 +75,7 @@ class Network:
         else:
             self.plugin = plugin
 
-        if cpu_extension and 'CPU' in device:
+        if cpu_extension and "CPU" in device:
             self.plugin.add_cpu_extension(cpu_extension)
 
         # Read IR
@@ -76,30 +85,39 @@ class Network:
 
         if self.plugin.device == "CPU":
             supported_layers = self.plugin.get_supported_layers(self.net)
-            not_supported_layers = \
-                [l for l in self.net.layers.keys() if l not in supported_layers]
+            not_supported_layers = [
+                l for l in self.net.layers.keys() if l not in supported_layers
+            ]
             if len(not_supported_layers) != 0:
-                log.error("Following layers are not supported by "
-                          "the plugin for specified device {}:\n {}".
-                          format(self.plugin.device,
-                                 ', '.join(not_supported_layers)))
-                log.error("Please try to specify cpu extensions library path"
-                          " in command line parameters using -l "
-                          "or --cpu_extension command line argument")
+                log.error(
+                    "Following layers are not supported by "
+                    "the plugin for specified device {}:\n {}".format(
+                        self.plugin.device, ", ".join(not_supported_layers)
+                    )
+                )
+                log.error(
+                    "Please try to specify cpu extensions library path"
+                    " in command line parameters using -l "
+                    "or --cpu_extension command line argument"
+                )
                 sys.exit(1)
 
         if num_requests == 0:
             # Loads network read from IR to the plugin
             self.net_plugin = self.plugin.load(network=self.net)
         else:
-            self.net_plugin = self.plugin.load(network=self.net, num_requests=num_requests)
+            self.net_plugin = self.plugin.load(
+                network=self.net, num_requests=num_requests
+            )
 
         self.input_blob = next(iter(self.net.inputs))
         self.out_blob = next(iter(self.net.outputs))
-        assert len(self.net.inputs.keys()) == input_size, \
-            "Supports only {} input topologies".format(len(self.net.inputs))
-        assert len(self.net.outputs) == output_size, \
-            "Supports only {} output topologies".format(len(self.net.outputs))
+        assert (
+            len(self.net.inputs.keys()) == input_size
+        ), "Supports only {} input topologies".format(len(self.net.inputs))
+        assert (
+            len(self.net.outputs) == output_size
+        ), "Supports only {} output topologies".format(len(self.net.outputs))
 
         return self.plugin, self.get_input_shape()
 
@@ -128,7 +146,8 @@ class Network:
         :return: Instance of Executable Network class
         """
         self.infer_request_handle = self.net_plugin.start_async(
-            request_id=request_id, inputs={self.input_blob: frame})
+            request_id=request_id, inputs={self.input_blob: frame}
+        )
         return self.net_plugin
 
     def wait(self, request_id):

@@ -28,6 +28,7 @@ import socket
 import json
 import cv2
 
+import numpy as np
 import logging as log
 import paho.mqtt.client as mqtt
 
@@ -99,16 +100,33 @@ def ssd_out(frame, result):
     """
     current_count = 0
     for obj in result[0][0]:
-        # Draw bounding box for object when it's probability is more than
+        # Draw bounding box for object when its probability is more than
         #  the specified threshold
         if obj[2] > prob_threshold:
             xmin = int(obj[3] * initial_w)
             ymin = int(obj[4] * initial_h)
             xmax = int(obj[5] * initial_w)
             ymax = int(obj[6] * initial_h)
-            cv2.rectangle(frame, (xmin, ymin), (xmax, ymax), (0, 55, 255), 1)
-            current_count = current_count + 1
+            cv2.rectangle(frame, (xmin, ymin), (xmax, ymax), (185, 0, 245), 2)
+            current_count += 1
     return frame, current_count
+
+
+# function to check if the bounding box is touching one of the frame boundary triggers
+def rect_intersect(frame, boxA, boxB, rgb):
+    xA = max(boxA[0], boxB[0])
+    yA = max(boxA[1], boxB[1])
+    xB = min(boxA[2], boxB[2])
+    yB = min(boxA[3], boxB[3])
+    
+    # draw the frame boundary trigger box
+    cv2.rectangle(frame, (boxA[0], boxA[1]), (boxA[2], boxA[3]), (rgb[0], rgb[1], rgb[2]), 2)
+    
+    # if boxes intersect, return True
+    if abs(max((xB - xA, 0)) * max((yB - yA), 0)) > 0:
+        return True
+    else:
+        return False
 
 
 def main():
@@ -128,8 +146,20 @@ def main():
 
     cur_request_id = 0
     last_count = 0
+    last_touched_border = "None"
     total_count = 0
     start_time = 0
+    thirty_frames = np.empty(30)
+    thirty_frames.fill(0)
+    running_avg = 0
+    lag = 0
+    a_red = [0, 0, 185]
+    a_green = [0, 185, 0]
+    a_blue = [185, 0, 0]
+    l_red = list(a_red)
+    l_green = list(a_green)
+    l_blue = list(a_blue)
+    ltb_text_color = l_blue
 
     # Initialise the class
     infer_network = Network()
@@ -183,25 +213,71 @@ def main():
             if args.perf_counts:
                 perf_count = infer_network.performance_counter(cur_request_id)
                 performance_counts(perf_count)
-
             frame, current_count = ssd_out(frame, result)
             inf_time_message = "Inference time: {:.3f}ms"\
                                .format(det_time * 1000)
-            cv2.putText(frame, inf_time_message, (15, 15),
-                        cv2.FONT_HERSHEY_COMPLEX, 0.5, (200, 10, 10), 1)
-
+            cv2.putText(frame, inf_time_message, (75, 15),
+                        cv2.FONT_HERSHEY_SIMPLEX, 0.5, l_blue, 1)
+       
+            # [min_dist_from_left, min_dist_from_top, max_dist_from_left, max_dist_from_top]
+            bottom_border = [0, int(initial_h - 5), int(initial_w - 150), int(initial_h)]
+            right_border = [int(initial_w - 5), 0, int(initial_w), int(initial_h - 150)]
+            
+            # get bounding box coordinates from result & convert to int32
+            bounding_box = np.array(result[0][0][0][3:7] \
+                            * [initial_w, initial_h, initial_w, initial_h]).astype('int32')
+            
+            # store bounding box coordinates as string for display
+            bbox_coordinates = ("xyMin: (" + str(bounding_box[0]) + ", " \
+                                + str(bounding_box[1]) + "), " \
+                                + "xyMax: (" +  str(bounding_box[2]) + ", " \
+                                + str(bounding_box[3]) + ")")
+            
+            # check if bounding box is touching either the bottom or right border of the frame
+            if rect_intersect(frame, bottom_border, bounding_box, a_green):
+                last_touched_border = "Bottom"
+                ltb_text_color = l_green
+            if rect_intersect(frame, right_border, bounding_box, a_red):
+                last_touched_border = "Right"
+                ltb_text_color = l_red
+                
+            # display last touched border on-screen
+            cv2.putText(frame, "Last Touched Border: ", 
+                        (80, 35), cv2.FONT_HERSHEY_SIMPLEX, 0.5, l_blue, 1)
+            cv2.putText(frame, last_touched_border, 
+                        (255, 35), cv2.FONT_HERSHEY_SIMPLEX, 0.5, ltb_text_color, 2)
+            cv2.putText(frame, bbox_coordinates, 
+                        (85, 55), cv2.FONT_HERSHEY_SIMPLEX, 0.5, l_blue, 1)
+            
+            # thirty frame running average of current_count
+            thirty_frames[:-1] = thirty_frames[1:]
+            thirty_frames[-1] = current_count
+            running_avg = round(np.mean(thirty_frames), 2)
+            
+            # if a person was detected in at least 20%
+            # of the last 30 frames, set current_count to 1
+            # otherwise, set current_count to 0
+            if running_avg >= 0.2:
+                current_count = 1
+            else:
+                current_count = 0
+        
             # When new person enters the video
-            if current_count > last_count:
+            if current_count > last_count and last_touched_border == "Bottom":
                 start_time = time.time()
-                total_count = total_count + current_count - last_count
-                client.publish("person", json.dumps({"total": total_count}))
+                total_count += current_count - last_count
+                client.publish("person", json.dumps({"total": total_count}))                
 
             # Person duration in the video is calculated
-            if current_count < last_count:
+            if current_count < last_count \
+                and last_touched_border == "Right" \
+                and bounding_box[0] + bounding_box[2] == 0:
+                current_count = 0
                 duration = int(time.time() - start_time)
-                # Publish messages to the MQTT server
-                client.publish("person/duration",
-                               json.dumps({"duration": duration}))
+                if duration > 0:
+                    # Publish messages to the MQTT server
+                    client.publish("person/duration",
+                                   json.dumps({"duration": duration}))
 
             client.publish("person", json.dumps({"count": current_count}))
             last_count = current_count

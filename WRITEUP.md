@@ -57,6 +57,9 @@ mv $pretrim ${pretrim::(-11)}
 ---
   
 # Project Write-Up
+
+## Notes to Instructor
+I decided early on in the process to base my project on the starter code from Intel's official intel-iot-devkit/people-counter-python repository on GitHub rather than the starter code from the Udacity repo, as I found its comments to be more instructive, and the general workflow more to my liking. 
   
 ## Explaining Custom Layers
   

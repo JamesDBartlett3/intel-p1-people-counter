@@ -73,9 +73,10 @@ That being said, some of the potential reasons for handling custom layers are:
   
 ## Comparing Model Performance
   
-- My method(s) to compare models before and after conversion to Intermediate Representations:  
-  - [I used Keras for the "Before"](https://www.youtube.com/watch?v=OO4HD-1wRN8)  
-  - [I used OpenVINO for the "After"](#Model-Research)  
+My method(s) to compare models before and after conversion to Intermediate Representations:  
+- I created a notebook in Google Colab with code to run my chosen model in both TensorFlow and OpenVINO, and compare their performance side-by-side
+  - I based my TensorFlow inference code on [object_detection_tutorial.ipynb from the TensorFlow repo on GitHub](https://github.com/tensorflow/models/blob/master/research/object_detection/colab_tutorials/colab_tutorials/object_detection_tutorial.ipynb)
+  - I based my OpenVINO inference code on [demo.ipynb from the OpenDevLibrary repo on GitHub](https://github.com/alihussainia/OpenDevLibrary/blob/master/demo.ipynb)
 
 [__THE LAST REMAINING SECTION__]()  
 - [ ] The difference between model accuracy pre- and post-conversion was
@@ -140,10 +141,10 @@ In investigating potential people counter models, I tried each of the following 
       - The bounding box's last known intersection with either the bottom or right edge of the frame
       - A rolling average of detections from the last 30 frames to counteract jitter
   - How I would have liked to improve the app, if I had more time:
-    - Using a 3/4 majority of the following thresholds, to classify each detection event as "unique" or "duplicate":
-      - Confidence threshold greater than W
-      - Bounding box distance from edge of frame less than X
-      - Bounding box distance from location of last detection greater than Y
-      - Miliseconds since last detection greater than Z
+    - Using a 3/4 majority of the following metrics to classify each detection event as "unique" or "duplicate":
+      - Confidence threshold
+      - Bounding box distance from edge of frame
+      - Bounding box distance from location of last detection
+      - Miliseconds since last detection
 
 ---

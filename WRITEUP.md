@@ -73,18 +73,23 @@ That being said, some of the potential reasons for handling custom layers are:
   
 ## Comparing Model Performance
   
-My method(s) to compare models before and after conversion to Intermediate Representations:  
-- I created a notebook in Google Colab with code to run my chosen model in both TensorFlow and OpenVINO, and compare their performance side-by-side
-  - I based my TensorFlow inference code on [object_detection_tutorial.ipynb from the TensorFlow repo on GitHub](https://github.com/tensorflow/models/blob/master/research/object_detection/colab_tutorials/colab_tutorials/object_detection_tutorial.ipynb)
-  - I based my OpenVINO inference code on [demo.ipynb from the OpenDevLibrary repo on GitHub](https://github.com/alihussainia/OpenDevLibrary/blob/master/demo.ipynb)
+### Methods
 
-[__THE LAST REMAINING SECTION__]()  
-- [ ] The difference between model accuracy pre- and post-conversion was
-  - [ ] x
-- [ ] The size of the model pre- and post-conversion was
-  - [ ] y
-- [ ] The inference time of the model pre- and post-conversion was
-  - [ ] z
+I created a notebook in Google Colab with code to run my chosen model in both TensorFlow and OpenVINO, and compare their performance side-by-side
+- I based my TensorFlow inference code on [object_detection_tutorial.ipynb from the TensorFlow repo on GitHub](https://github.com/tensorflow/models/blob/master/research/object_detection/colab_tutorials/colab_tutorials/object_detection_tutorial.ipynb)
+- I based my OpenVINO inference code on [demo.ipynb from the OpenDevLibrary repo on GitHub](https://github.com/alihussainia/OpenDevLibrary/blob/master/demo.ipynb)
+
+### Metrics
+
+- [ ] Model Accuracy
+  - Pre-Conversion: 
+  - Post-Conversion: 
+- Model Size
+  - Pre-Conversion: 210 MB
+  - Post-Conversion: 65 MB
+- [ ] Model Inference Time
+  - Pre-Conversion: 
+  - Post-Conversion: 
   
 ## Assess Model Use Cases
   

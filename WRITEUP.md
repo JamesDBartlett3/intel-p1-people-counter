@@ -85,7 +85,7 @@ I created a notebook in Google Colab with code to run my chosen model in both Te
   - Pre-Conversion: 
   - Post-Conversion: 
 - Model Size
-  - Pre-Conversion: 210 MB
+  - Pre-Conversion: 201 MB
   - Post-Conversion: 65 MB
 - [ ] Model Inference Time
   - Pre-Conversion: 

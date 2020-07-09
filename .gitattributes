@@ -1,1 +1,6 @@
-
+webservice/* linguist-vendored
+models/* linguist-vendored
+logs/* linguist-vendored
+images/* linguist-vendored
+ffmpeg/* linguist-vendored
+resources/* linguist-vendored

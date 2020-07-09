@@ -81,15 +81,16 @@ I created a notebook in Google Colab with code to run my chosen model in both Te
 
 ### Metrics
 
-- [ ] Model Accuracy
-  - Pre-Conversion: 
-  - Post-Conversion: 
+- Model Precision
+  - Pre-Conversion: COCO mAP[^1] = 22
+  - Post-Conversion: Unable to calculate COCO mAP[^1] value post-conversion
 - Model Size
   - Pre-Conversion: 201 MB
   - Post-Conversion: 65 MB
-- [ ] Model Inference Time
-  - Pre-Conversion: 
-  - Post-Conversion: 
+- Model Inference Time (values from [this article](https://mc.ai/how-to-run-tensorflow-object-detection-model-faster-with-intel-graphics/) on MC.AI)
+  ![inference_time](https://cdn-images-1.medium.com/freeze/max/1000/0*eMnKV_K4cvjh5-3b.png)
+  - Pre-Conversion (on GPU): 65.2
+  - Post-Conversion (FP32 on GPU): 41.9
   
 ## Assess Model Use Cases
   

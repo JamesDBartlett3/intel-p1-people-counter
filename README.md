@@ -41,11 +41,7 @@ git remote add origin https://github.com/JamesDBartlett/intel-p1-people-counter.
 git pull origin main
 ```
 
-Unfortunately, the Workspace doesn't allow us to close the default tabs, or change which files they point to, so there's one more step of setup to go.
-
-Select the "Refresh Workspace" function from the Menu in the lower-left corner, and when it asks for confirmation, do so. 
-
-Another minute or two later, the Workspace will reappear, and all visible files will be the ones from this repo. 
+Now, since we've replaced all of the code files in the workspace, we need to re-load the Jupyter tabs, so they display the ones we've just downloaded. Open the File menu, and select "Close All Tabs." Then, open the File Browser pane, and double-click the file "Guide.ipynb." This will automatically re-open all of the default tabs, and they will now contain the updated code. 
         
 ## Run the application
 

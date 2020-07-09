@@ -1,4 +1,16 @@
 #!/usr/bin/env python3
+
+
+"""
+NOTE TO UDACITY MENTORS:
+This file is based primarily on the inference.py found in the official Intel IoT Devkit "People Counter Python" repo on GitHub:
+https://github.com/intel-iot-devkit/people-counter-python/blob/master/inference.py
+
+Very little was needed in the way of changes to this file, so it bears close resemblance to its original source,
+other than some basic formatting differences. 
+"""
+
+
 """
  Copyright (c) 2018 Intel Corporation.
 
@@ -20,15 +32,6 @@
  LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
  OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
  WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-"""
-
-"""
-NOTE TO UDACITY MENTORS:
-This file is based primarily on the inference.py found in the official Intel IoT Devkit "People Counter Python" repo on GitHub:
-https://github.com/intel-iot-devkit/people-counter-python/blob/master/inference.py
-
-Very little was needed in the way of changes to this file, so it will bear close resemblance to its original source,
-other than some basic formatting differences. 
 """
 
 import os

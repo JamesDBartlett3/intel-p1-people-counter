@@ -20,6 +20,15 @@
  WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 """
 
+"""
+NOTE TO UDACITY MENTORS:
+This file is based primarily on the main.py found in the official Intel IoT Devkit "People Counter Python" repo on GitHub:
+https://github.com/intel-iot-devkit/people-counter-python/blob/master/main.py
+
+A fair amount of the code and comments from that file remain unchanged in this file. 
+However, I did make significant enhancements, particularly in the sections that deal with false negatives. 
+Intel's code did not have a mechanism for handling false negatives, so all of those parts are 100% original, coded by me. 
+"""
 
 import os
 import sys

@@ -22,6 +22,15 @@
  WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 """
 
+"""
+NOTE TO UDACITY MENTORS:
+This file is based primarily on the inference.py found in the official Intel IoT Devkit "People Counter Python" repo on GitHub:
+https://github.com/intel-iot-devkit/people-counter-python/blob/master/inference.py
+
+Very little was needed in the way of changes to this file, so it will bear close resemblance to its original source,
+other than some basic formatting differences. 
+"""
+
 import os
 import sys
 import time

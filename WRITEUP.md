@@ -82,8 +82,8 @@ I created a notebook in Google Colab with code to run my chosen model in both Te
 ### Metrics
 
 - Model Precision
-  - Pre-Conversion: COCO mAP[^1] = 22
-  - Post-Conversion: Unable to calculate COCO mAP[^1] value post-conversion
+  - Pre-Conversion: COCO mAP[^1] = 22 (from the [TensorFlow docs on GitHub](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md))
+  - Post-Conversion: I was unable to calculate COCO mAP[^1] value post-conversion
 - Model Size
   - Pre-Conversion: 201 MB
   - Post-Conversion: 65 MB

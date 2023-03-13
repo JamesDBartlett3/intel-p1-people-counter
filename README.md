@@ -37,7 +37,7 @@ Resetting the data usually takes a minute or two. After that finishes, use the t
 mkdir ../_old/
 mv ./* ../_old/
 git init .
-git remote add origin https://github.com/JamesDBartlett/intel-p1-people-counter.git
+git remote add origin https://github.com/JamesDBartlett3/intel-p1-people-counter.git
 git pull origin main
 
 ```
